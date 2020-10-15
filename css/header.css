@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+.Container {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo > a {
+    margin: auto 20px;
+    text-decoration: underline;
+    font-family: MullerExtraBold, sans-serif;
+    color: #d43a30;
+    height: 16px;
+}
+.nav-logo {
+    margin-right: 30px;
+}
+
+.navigation > a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: MullerMedium, sans-serif;
+    height: 13px;
+    font-size: 15px;
+}
+.nav-pa {
+    margin-left: 60px;
+}
+.nav-pa > a {
+    margin: 5px;
+    text-decoration: none;
+    font-family: MullerRegular, sans-serif;
+    font-size: 15px;
+}
+.abstract {
+    border-radius: 18px;
+    background-color: #df574f;
+    height: 38px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: MullerRegular, sans-serif;
+    color: #ffffff;
+}
+
+.search {
+    background-image: url(/img/bacgroundHeader.jpg);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    max-height: 90px;
+    position: fixed;
+    z-index: 0;
+}
