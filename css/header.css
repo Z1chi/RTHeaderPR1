@@ -1,12 +1,17 @@
+*,*:focus,*:hover{
+    outline: none;
+}
 body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
 }
+
 .Container {
     width: 100%;
-    padding: 20px 0 0 0;
+    padding:0;
 }
+
 .header-wrap {
     display: flex;
     flex-direction: row;
@@ -21,8 +26,9 @@ body {
     color: #d43a30;
     height: 16px;
 }
+
 .nav-logo {
-    margin-right: 30px;
+    margin: 30px 30px 30px 0;
 }
 
 .navigation > a {
@@ -32,18 +38,21 @@ body {
     height: 13px;
     font-size: 15px;
 }
+
 .nav-pa {
     margin-left: 60px;
 }
+
 .nav-pa > a {
     margin: 5px;
     text-decoration: none;
     font-family: MullerRegular, sans-serif;
     font-size: 15px;
 }
+
 .abstract {
     border-radius: 18px;
-    background-color: #df574f;
+    background-color: #dd3d34;
     height: 38px;
     padding: 10px 20px;
     text-decoration: none;
@@ -51,15 +60,144 @@ body {
     font-family: MullerRegular, sans-serif;
     color: #ffffff;
 }
-
+.search>.formSearch{
+    text-align: center;
+    margin: 17px 0;
+}
 .search {
-    background-image: url(/img/bacgroundHeader.jpg);
-    background-repeat: no-repeat;
-    min-height: 100%;
-    min-width: 640px;
+    background-image: url("../img/bacgroundHeader1.jpg");
+    border-radius: 0 33px 0 0;
+    height: 90px;
     width: 100%;
-    height: auto;
-    max-height: 90px;
     position: fixed;
-    z-index: 0;
+    z-index: 5;
+    max-width: 1838px;
+}
+
+.searchCity {
+    position: relative;
+    margin: 0 15px;
+    border-radius: 28px;
+    border: 1px solid #636467;
+}
+
+.searchCity > * {
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    margin: 7px;
+    z-index: 60;
+}
+
+.formSearch {
+    display: flex;
+    justify-content: center;
+}
+
+.searchCity > button {
+    position: absolute;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.searchCity > .fa fa-times {
+    font-family: MullerBold, sans-serif;
+}
+.border>button{
+    font-family: MullerExtraBold, sans-serif;
+   margin-top: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    background-color: #dd2629;
+    width: 200px;
+}
+.searchVacancy {
+    width: 450px
+}
+.border {
+    margin: 0 20px;
+    border-radius: 28px;
+    border: 1px solid #636467;
+    padding: 0 7px 8px;
+}
+.iconChair {
+    position: absolute;
+    top: 15px;
+    left: 10%;
+}
+.active:after {
+    content: '';
+    border: 12px solid transparent;
+    border-bottom: 12px solid #444a99;
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: -40px;
+    width: 0;
+}
+
+.active {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.way {
+    margin: 110px 0 0 15%;
+}
+.way>*{
+    font-family: MullerRegular, sans-serif;
+}
+.way>ul{
+    display: flex;
+}
+li {
+    list-style-type: none;
+    margin-right: 15px ;
+}
+.way>ul>li>a {
+    text-decoration: none;
+    border: none;
+}
+.way>ul>li>a>svg{
+    margin: 0 0 -5px 10px;
+}
+
+.catalog{
+    display: flex;
+max-width: 1280px;
+    margin: 0 auto;
+}
+
+aside>div>p>svg{
+
+}
+aside>div>p{
+    position: relative;
+    font-size: 30px;
+    font-family: MullerBold,sans-serif;
+    z-index: 36;
+    color: #0253a3;
+}
+aside>div>p>sup{
+    font-size: 10px;
+    z-index: 36;
+    color: #000000;
+    position: relative;
+}
+.svgRelative{
+    position: relative;
+}
+.svgRelative>svg{
+color: #dd2629;
+position: absolute;
+z-index: 1;
+right: 30px;
+top: -23px
 }
