@@ -238,7 +238,7 @@ aside > div > p > sup {
 .aside__side-bar__button > svg {
     width: 15px;
     height: 10px;
-
+    margin: 0 0 0 150px  ;
 }
 
 .aside__side-bar__button {
@@ -252,8 +252,12 @@ aside > div > p > sup {
     font-weight: 700;
     font-size: 13px;
     color: #060c3e;
+    line-height: 16.97px;
 }
-
+.aside__side-bar__button{
+  text-align: left;
+    margin-left: 4px;
+}
 
 .side-button_cheked {
     font-family: MullerMedium, sans-serif;
@@ -263,41 +267,75 @@ aside > div > p > sup {
     text-align: left;
     margin: 5px 0;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .side-button_cheked > label {
     margin: 5px 10px;
 }
 
-.side-button_cheked > input[type=checkbox] {
+.custom-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
+    margin: 10px 0 0 20px;
 }
-
-.custom-checkbox + .side-button_cheked > label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
+.custom-checkbox ~.side-button_cheked > label{
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
 }
-
-.custom-checkbox + .side-button_cheked > label::before {
+.custom-checkbox ~.side-button_cheked > label:before{
     content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #bd0201;
-    border-radius: 3px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.custom-checkbox ~.side-button_cheked > label:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: .2s;
+}
+.custom-checkbox:checked ~.side-button_cheked > label:after{left: 26px;}
+.custom-checkbox:checked ~.side-button_cheked > label:before{background: #9FD468;}
+.custom-checkbox:focus ~.side-button_cheked > label:before{
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+.input-cost{
+    display: flex;
 }
 
-.custom-checkbox:checked + .side-button_cheked > label::before {
-    border-color: #0b76ef;
-    display: inline-block;
-    background-color: #0b76ef;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+.input-cost__price {
+    display: flex;
+    width: 130px;
+    height: 45px;
+    border: 1px solid #e2e2e2;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    text-align: center;
+    margin: 20px 5px;
+}
+.input-cost__submit{
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 13px;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    background-color: #dd2629;
+    width: 200px;
+    margin: 0 0 0 45px;
 }
