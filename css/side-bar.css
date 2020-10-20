@@ -36,6 +36,7 @@ aside > div > p > sup {
 .svgRelative {
     position: relative;
     max-width: 330px;
+    margin-left: -30px;
 }
 
 .svgRelative > svg {
@@ -100,74 +101,7 @@ aside > div > p > sup {
     position: relative;
 }
 
-.custom-checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    margin: 10px 0 0 20px;
-}
-.custom-checkbox ~.side-button_cheked > label{
-    position: relative;
-    padding: 0 0 0 60px;
-    cursor: pointer;
-}
-.custom-checkbox ~.side-button_cheked > label:before{
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: 0;
-    width: 50px;
-    height: 26px;
-    border-radius: 13px;
-    background: #CDD1DA;
-    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
-    transition: .2s;
-}
-.custom-checkbox ~.side-button_cheked > label:after{
-    content: '';
-    position: relative;
-    top: -2px;
-    display: flex;
-    left: 2px;
-    width: 22px;
-    height: 22px;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0 2px 5px rgba(0,0,0,.3);
-    transition: .2s;
-}
-.custom-checkbox:checked ~.side-button_cheked > label:after{left: 26px;}
-.custom-checkbox:checked ~.side-button_cheked > label:before{
-    background: #9FD468;}
-.custom-checkbox:focus ~.side-button_cheked > label:before{
-    box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
-}
-.input-cost{
-    display: flex;
-}
 
-.input-cost__price {
-    display: flex;
-    width: 130px;
-    height: 45px;
-    border: 1px solid #e2e2e2;
-    background-color: #f9f9f9;
-    border-radius: 3px;
-    text-align: center;
-    margin: 20px 5px;
-}
-.input-cost__submit{
-    font-family: Montserrat-Regular, sans-serif;
-    font-size: 13px;
-    border-radius: 50px;
-    color: #ffffff;
-    padding: 10px 25px;
-    border: none;
-    background-color: #dd2629;
-    width: 200px;
-    margin: 0 0 0 45px;
-    cursor: pointer;
-}
 
 ----
 
@@ -179,8 +113,13 @@ aside > div > p > sup {
 }
 .checkbox__text {
     position: relative;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 30px;
     cursor: pointer;
+    margin: -16px 0 10px 0;
+    font-family: MullerMedium, sans-serif;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
 }
 
 
@@ -192,4 +131,29 @@ aside > div > p > sup {
 }
 .checkbox input:focus + .checkbox__text:before {
     box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+
+.input-cost {
+    display: flex;
+}
+.input-cost__price {
+    display: flex;
+    width: 130px;
+    height: 45px;
+    border: 1px solid #e2e2e2;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    text-align: center;
+    margin: 20px 5px;
+}
+.input-cost__submit {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 13px;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    background-color: #dd2629;
+    width: 200px;
+    margin: 0 0 0 45px;
 }

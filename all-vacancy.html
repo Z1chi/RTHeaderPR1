@@ -13,6 +13,8 @@
     <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>
 </head>
 <body>
+<div class="background__pointer_right"><img src="./img/Фон_точки_.png"></div>
+<div class="background__pointer_left"><img src="./img/Фон_точки_.png"></div>
 <div class="Container">
     <header class="header-wrap">
         <nav class="nav-logo">
@@ -40,7 +42,7 @@
             </div>
             <div class="searchCity">
                 <input class="searchVacancy" type="text" name="vacancyHeader" placeholder="Должность или компания">
-                <button><i class="fa fa-search"></i></button>
+                <button class="searchCity__button_color"><i class="fa fa-search"></i></button>
             </div>
             <div class="border">
                 <button type="submit">Найти вакансии</button>
@@ -121,7 +123,7 @@
             <div class="aside__side-bar">
                 <button class="aside__side-bar__button">
                     <span class="side-bar__button__span">КАТЕГОРИЯ</span>
-                    <svg version="1.1" id="Capa_1" width="15" height="50" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="active" version="1.1" id="Capa_1" width="15" height="50" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258"
@@ -137,40 +139,74 @@
 	C512,267.046,503.046,276,492,276z"/></svg>
                 </button>
                 <div class="aside__side-bar__button__checkbox">
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk1"/><label
-                            for="chk1">Курьерские услуги</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk2"/><label
-                            for="chk2">Ремонт и строительство</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk3"/><label
-                            for="chk3">Грузоперевозки</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk4"/><label
-                            for="chk4">Уборка и помощь по хозяйству</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk5"/><label
-                            for="chk5">Виртуальный помощник</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk6"/><label
-                            for="chk6">Компьютерная помощь</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk7"/><label
-                            for="chk7">Мероприятия и промо-акции</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk8"/><label
-                            for="chk8">Дизайн</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk9"/><label
-                            for="chk9">Web-разработка</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk10"><label
-                            for="chk10">Фото- и видео-услуги</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk11"><label
-                            for="chk11">Установка и ремонт техники</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk12"><label
-                            for="chk12">Красота и здоровье</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk13"><label
-                            for="chk13">Ремонт цифровой техники</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk14"><label
-                            for="chk14">Юридическая помощь</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk15"><label
-                            for="chk15">Репетиторы и обучение</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk16"><label
-                            for="chk16">Ремонт транспорта</label></div>
-                    <div class="side-button_cheked"><input class="custom-checkbox" type="checkbox" id="chk17"><label
-                            for="chk17">Случайные задан</label></div>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Курьерские услуги</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Ремонт и строительство</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Грузоперевозки</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Уборка и помощь по хозяйству</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Виртуальный помощник</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Компьютерная помощь</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Мероприятия и промо-акции</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Дизайн</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Web-разработка</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Фото- и видео-услуги</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Установка и ремонт техники</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Красота и здоровье</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Ремонт цифровой техники</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Юридическая помощь</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Репетиторы и обучение</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Ремонт транспорта</div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <div class="checkbox__text">Случайные задан</div>
+                    </label>
                 </div>
                 <button type="submit" class="aside__side-bar__button">
                     <span class="side-bar__button__span">БЮДЖЕТ</span>
@@ -195,17 +231,147 @@
                         <input type="text" class="input-cost__price" placeholder="ОТ" pattern="^[ 0-9]+$">
                         <input type="text" class="input-cost__price" placeholder="ДО" pattern="^[ 0-9]+$">
                     </div>
-                        <button class="input-cost__submit" type="submit">Применить</button>
+                    <button class="input-cost__submit" type="submit">Применить</button>
                 </form>
 
+            </div>
+        </aside>
+        <section>
+            <div class="single-vacancy">
+                <div class="single-vacancy__block-left">
+                    <div class="single-vacancy__tegs">
+                    <a class="single-vacancy__tegs__style">Розничная торговля</a>
+                    <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+                    <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+                </div>
+                <div class="single-vacancy__info-job">
+                    <p class="info-job__name-vacancy">Заправщик-Продавец на АЗС</p>
+                    <p class="single-vacancy__name-company">ООО АНКОР</p>
+                    <div class="single-vacancy__info-views">
+                        <p>Добавлено: 12.10.2020</p>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 488.85 488.85" width="15px" height="15px" style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+<g>
+	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
+		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
+		c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
+		C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
+		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
+</g>
+</svg>
+                        <p>12</p>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 477.883 477.883" width="15px" height="15px" style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
+			c2.401,4.798,6.919,8.188,12.197,9.151l176.111,32.034l32.034,176.111c1.311,7.219,7.091,12.793,14.353,13.841
+			c0.803,0.116,1.613,0.173,2.423,0.171c6.469,0.003,12.383-3.651,15.275-9.438L476.07,24.711
+			C480.292,16.284,476.883,6.03,468.456,1.808z"/>
+	</g>
+</g>
+</svg>
+                        <p>Донецк</p></div>
+                    <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+                    <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+                </div>
+                </div>
+                <div class="single-vacancy__block_right">
+                    <img src="./img/Слой_9.png">
+                    <button>Посмотреть полностью</button>
+                </div>
+            </div>
+            <div class="single-vacancy">
+                <div class="single-vacancy__block-left">
+                    <div class="single-vacancy__tegs">
+                        <a class="single-vacancy__tegs__style">Розничная торговля</a>
+                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+                        <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+                    </div>
+                    <div class="single-vacancy__info-job">
+                        <p class="info-job__name-vacancy">Заправщик-Продавец на АЗС</p>
+                        <p class="single-vacancy__name-company">ООО АНКОР</p>
+                        <div class="single-vacancy__info-views">
+                            <p>Добавлено: 12.10.2020</p>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 488.85 488.85" width="15px" height="15px" style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+<g>
+	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
+		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
+		c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
+		C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
+		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
+</g>
+</svg>
+                            <p>12</p>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 477.883 477.883" width="15px" height="15px" style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
+			c2.401,4.798,6.919,8.188,12.197,9.151l176.111,32.034l32.034,176.111c1.311,7.219,7.091,12.793,14.353,13.841
+			c0.803,0.116,1.613,0.173,2.423,0.171c6.469,0.003,12.383-3.651,15.275-9.438L476.07,24.711
+			C480.292,16.284,476.883,6.03,468.456,1.808z"/>
+	</g>
+</g>
+</svg>
+                            <p>Донецк</p></div>
+                        <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+                        <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+                    </div>
+                </div>
+                <div class="single-vacancy__block_right">
+                    <img src="./img/Слой_9.png">
+                    <button>Посмотреть полностью</button>
+                </div>
+            </div>
+            <div class="single-vacancy">
+                <div class="single-vacancy__block-left">
+                    <div class="single-vacancy__tegs">
+                        <a class="single-vacancy__tegs__style">Розничная торговля</a>
+                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+                        <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+                    </div>
+                    <div class="single-vacancy__info-job">
+                        <p class="info-job__name-vacancy">Заправщик-Продавец на АЗС</p>
+                        <p class="single-vacancy__name-company">ООО АНКОР</p>
+                        <div class="single-vacancy__info-views">
+                            <p>Добавлено: 12.10.2020</p>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 488.85 488.85" width="15px" height="15px" style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+<g>
+	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
+		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
+		c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3
+		C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7
+		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
+</g>
+</svg>
+                            <p>12</p>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 477.883 477.883" width="15px" height="15px" style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
+			c2.401,4.798,6.919,8.188,12.197,9.151l176.111,32.034l32.034,176.111c1.311,7.219,7.091,12.793,14.353,13.841
+			c0.803,0.116,1.613,0.173,2.423,0.171c6.469,0.003,12.383-3.651,15.275-9.438L476.07,24.711
+			C480.292,16.284,476.883,6.03,468.456,1.808z"/>
+	</g>
+</g>
+</svg>
+                            <p>Донецк</p></div>
+                        <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+                        <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+                    </div>
+                </div>
+                <div class="single-vacancy__block_right">
+                    <img src="./img/Слой_9.png">
+                    <button>Посмотреть полностью</button>
+                </div>
+            </div>
+        </section>
     </div>
-    </aside>
-    <section></section>
 </div>
-</div>
-<label class="checkbox">
-    <input type="checkbox" />
-    <div class="checkbox__text">Яgfggf переключаю чекбокс</div>
-</label>
+
 </body>
 </html>

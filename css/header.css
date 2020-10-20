@@ -8,6 +8,18 @@ body {
     background-color: #FFFFFF;
 }
 
+.background__pointer_right{
+    position: absolute;
+    right: -100px;
+    top: -200px;
+    z-index: -1;
+}
+.background__pointer_left{
+    position: absolute;
+    left: -100px;
+    top: -200px;
+    z-index: -1;
+}
 .Container {
     width: 100%;
     padding: 0;
@@ -26,7 +38,7 @@ body {
     margin: auto 20px;
     text-decoration: underline;
     font-family: MullerExtraBold, sans-serif;
-    color: #d43a30;
+    color: #dd3d34;
 
 }
 
@@ -67,6 +79,7 @@ body {
     font-size: 12px;
     font-family: MullerRegular, sans-serif;
     color: #ffffff;
+    white-space: nowrap;
 }
 
 
@@ -88,6 +101,9 @@ body {
     position: relative;
     border-radius: 50px;
     border: 1px solid #636467;
+}
+.searchCity>.searchCity__button_color{
+    background: #dd3d34;
 }
 
 .searchCity > * {
@@ -122,7 +138,7 @@ body {
     color: #ffffff;
     padding: 10px 25px;
     border: none;
-    background-color: #dd2629;
+    background-color: #dd3d34;
     width: 200px;
 }
 

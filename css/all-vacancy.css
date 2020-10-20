@@ -7,3 +7,84 @@ body {
     padding: 0;
     background-color: #FFFFFF;
 }
+section{
+    margin: 90px 0 0 15px;
+}
+.single-vacancy {
+    border: 1px solid #acacac;
+    display: flex;
+    min-height: 270px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.single-vacancy__info-views {
+    display: inline-flex;
+    align-items: center;
+
+}
+.single-vacancy__tegs  {
+
+}
+.info-job__name-vacancy {
+    color: #000000;
+    font-family: MullerBold, sans-serif;
+    font-size: 18px;
+}
+.single-vacancy__info-views >p {
+    color: #636467;
+    margin-right: 20px;
+}
+.single-vacancy__info-views >svg {
+    margin-right: 5px;
+    opacity: 0.4;
+    color: #636467;
+}
+.single-vacancy__payment {
+    color: #ff3b30;
+    font-family: MullerExtraBold,sans-serif;
+    font-size: 18px;
+}
+.single-vacancy__block-left {
+    margin:20px 0 30px 50px ;
+    flex-basis: 80%;
+}
+
+.single-vacancy__block_right>button {
+    border-radius: 18px;
+    background-color: #ff3b30;
+    height: 38px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: MullerRegular, sans-serif;
+    color: #ffffff;
+    border: none;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.single-vacancy__block_right>img{
+    margin: 0 0 10px 35px ;
+    
+}
+.single-vacancy__info-job>.single-vacancy__name-company{
+    font-family: MullerRegular ,sans-serif;
+    color: #868686;
+}
+.single-vacancy__block_right{
+    margin: 20px 30px 0 50px;
+}
+.single-vacancy__tegs>.single-vacancy__tegs__style {
+    color: #FFFFFF;
+    font-family: MullerRegular,sans-serif;
+    font-size: 12px;
+    border-radius:28px ;
+    background: #aaaaaa;
+    padding: 5px 10px;
+    opacity: 0.5;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.single-vacancy__description {
+    font-family: MullerRegular ,sans-serif;
+    color: #868686;
+}
