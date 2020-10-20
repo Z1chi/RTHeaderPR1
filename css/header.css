@@ -69,7 +69,9 @@ body {
     font-family: MullerRegular, sans-serif;
     font-size: 15px;
 }
-
+.fa-search:before {
+    color: white;
+}
 .abstract {
     border-radius: 18px;
     background-color: #dd3d34;
@@ -81,7 +83,6 @@ body {
     color: #ffffff;
     white-space: nowrap;
 }
-
 
 .search {
     background-image: url("../img/bacgroundHeader1.jpg");
