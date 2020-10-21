@@ -6,17 +6,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+
 }
 
 .background__pointer_right{
     position: absolute;
-    right: -100px;
+    right: 0;
     top: -200px;
     z-index: -1;
+
 }
+
 .background__pointer_left{
     position: absolute;
-    left: -100px;
     top: -200px;
     z-index: -1;
 }
