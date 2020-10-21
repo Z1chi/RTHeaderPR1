@@ -23,16 +23,23 @@ section{
 
 }
 .single-vacancy__tegs  {
-
+    cursor: pointer;
 }
 .info-job__name-vacancy {
     color: #000000;
     font-family: MullerBold, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 .single-vacancy__info-views >p {
     color: #636467;
     margin-right: 20px;
+    font-family: MullerRegular,sans-serif;
+}
+.single-vacancy__info-views >a{
+    font-family: MullerRegular,sans-serif;
+    text-decoration: none;
+    color: #636467;
+    border: none;
 }
 .single-vacancy__info-views >svg {
     margin-right: 5px;
@@ -61,6 +68,12 @@ section{
     border: none;
     white-space: nowrap;
     margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.single-vacancy__block_right>button:hover {
+    background-color: #941515;
+    transition: background-color 0.5s;
 }
 .single-vacancy__block_right>img{
     margin: 0 0 10px 35px ;
@@ -83,6 +96,11 @@ section{
     opacity: 0.5;
     white-space: nowrap;
     margin-bottom: 20px;
+    transition: opacity 0.5s;
+}
+.single-vacancy__tegs>.single-vacancy__tegs__style:hover{
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 .single-vacancy__description {
     font-family: MullerRegular ,sans-serif;

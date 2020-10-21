@@ -126,6 +126,7 @@ body {
     right: 0;
     background-color: #FFFFFF;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .searchCity > .fa fa-times {
@@ -141,6 +142,7 @@ body {
     border: none;
     background-color: #dd3d34;
     width: 200px;
+    cursor: pointer;
 }
 
 .searchVacancy {
