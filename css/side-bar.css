@@ -67,13 +67,19 @@ aside > div > p > sup {
     width: 15px;
     height: 10px;
     margin: 0;
-    float: right;
+
+}
+.patch {
+    fill:#3CBDFE   !important;
 }
 
 .aside__side-bar__button {
     text-decoration: none;
     background-color: #FFFFFF;
     border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .side-bar__button__span {
