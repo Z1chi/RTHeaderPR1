@@ -155,6 +155,7 @@ aside > div > p > sup {
 
 .input-cost {
     display: flex;
+    margin-left: -10px;
 }
 .input-cost__price {
     display: flex;

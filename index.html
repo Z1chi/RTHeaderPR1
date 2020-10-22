@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Rabota.Today</title>
     <link rel="stylesheet" href="css/header.css" type="text/css">
     <link rel="stylesheet" href="font/font.css" type="text/css">
     <link rel="stylesheet" href="css/side-bar.css">
@@ -17,24 +18,40 @@
 <body>
 <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
+
+
 <div class="Container">
     <header class="header-wrap">
-        <nav class="nav-logo">
-            <a class="nav-logo__a" href="">
-                <img src=".\img\logo-main_(2).jpg" alt="logo"></a>
-            <a href="">Россия</a>
-        </nav>
-        <nav class="navigation">
-            <a class="navigation_active" href="">Вакансии</a>
-            <a class="" href="">Резюме</a>
-            <a class="" href="">Компании</a>
-            <a class="" href="">Работодателю</a>
-        </nav>
-        <nav class="nav-pa">
-            <a href="">Вход</a>
-            <a href="">Регистрация</a>
-            <a class="abstract" href="">Добавить Резюме</a>
-        </nav>
+        <div class="jsOpenNavMenu">
+            <svg enable-background="new 0 0 24 24" height="50" viewBox="0 0 24 24" width="50"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="m21.25 0h-18.5c-1.517 0-2.75 1.233-2.75 2.75v18.5c0 1.517 1.233 2.75 2.75 2.75h18.5c1.517 0 2.75-1.233 2.75-2.75v-18.5c0-1.517-1.233-2.75-2.75-2.75z"
+                      fill="#dd2629"/>
+                <path d="m21.25 24h-18.5c-1.517 0-2.75-1.233-2.75-2.75v-18.5c0-1.517 1.233-2.75 2.75-2.75h18.5c1.517 0 2.75 1.233 2.75 2.75v18.5c0 1.517-1.233 2.75-2.75 2.75zm-18.5-22.5c-.689 0-1.25.561-1.25 1.25v18.5c0 .689.561 1.25 1.25 1.25h18.5c.689 0 1.25-.561 1.25-1.25v-18.5c0-.689-.561-1.25-1.25-1.25z"/>
+                <path d="m16.25 8.5h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75s-.336.75-.75.75z"/>
+                <path d="m16.25 12.75h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75s-.336.75-.75.75z"/>
+                <path d="m16.25 17h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75s-.336.75-.75.75z"/>
+            </svg>
+        </div>
+        <div class="jsNavMenu tests">
+            <nav class="nav-logo">
+                <a class="" href="">
+                    <img src=".\img\logo-main_(2).jpg" alt="logo"></a>
+                <a href="">Россия</a>
+            </nav>
+            <nav class="navigation">
+                <a class="navigation_active" href="">Вакансии</a>
+                <a class="" href="">Резюме</a>
+                <a class="" href="">Компании</a>
+                <a class="" href="">Работодателю</a>
+            </nav>
+            <nav class="nav-pa">
+                <a href="">Вход</a>
+                <a href="">Регистрация</a>
+                <a class="abstract" href="">Добавить Резюме</a>
+            </nav>
+        </div>
+        <div class="filter-overlay nav-overlay jsNavOverlay "></div>
     </header>
     <div class="search">
         <form class="formSearch">
