@@ -88,6 +88,7 @@ section{
 }
 .single-vacancy__tegs>.single-vacancy__tegs__style {
     color: #FFFFFF;
+    display: inline-block;
     font-family: MullerRegular,sans-serif;
     font-size: 12px;
     border-radius:28px ;
@@ -95,7 +96,7 @@ section{
     padding: 5px 10px;
     opacity: 0.5;
     white-space: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     transition: opacity 0.5s;
 }
 .single-vacancy__tegs>.single-vacancy__tegs__style:hover{

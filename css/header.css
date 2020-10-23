@@ -115,9 +115,13 @@ body {
     border: 1px solid #636467;
 }
 
+.searchCity >input {
+
+    position: relative;
+    z-index: 80;
+}
 .searchCity > .searchCity__button_color {
     background-color: #dd2629;
-
     transition: background-color 0.5s;
 }
 
@@ -146,6 +150,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 90;
 }
 
 .searchCity > .fa fa-times {
@@ -220,10 +225,10 @@ body {
     display: flex;
 }
 
-li {
+.way__link {
     list-style-type: none;
-    margin-right: 15px;
     color: #30408d;
+    white-space: nowrap;
 }
 
 .way > ul > li > a {
@@ -232,7 +237,7 @@ li {
 }
 
 .way > ul > li > a > svg {
-    margin: 0 0 -5px 10px;
+    margin: 0 10px -5px 10px;
 }
 
 .activeBtn {
@@ -268,10 +273,16 @@ li {
 .nav-overlay {
     display: none;
 }
-
-
+.header-wrap__button_menu {
+    display: none;
+}
 @media (max-width: 1365px) {
 
+    .header-wrap__button_menu {
+        display: block;
+        margin: auto 15px;
+        cursor: pointer;
+    }
     .header-wrap__navParent {
         position: fixed;
         top: 0;
@@ -333,6 +344,44 @@ li {
     }
 
 }
+@media (max-width: 900px) {
+    .iconChair {
+        display: none;
+    }
+    .way {
+        margin:  0  -35px 0;
+    }
+    .aside__side-bar__button__checkbox{
+        margin-left: 10px  ;
+    }
+}
+@media (max-width: 1023px) {
+    .border >button {
+        width: 100%;
+        white-space: nowrap;
+    }
+    .searchVacancy {
+        width: 250px
+    }
+
+}
+@media (max-width: 700px) {
+    .searchCity__input {
+
+        width: calc(100% - 45px);
+    }
+    .formSearch {
+        flex-direction: column;
+    }
+    .search {
+        height:210px
+    }
+}
+
+
+
+
+
 
 
 
