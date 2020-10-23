@@ -174,7 +174,7 @@ aside > div > p > sup {
 
 .input-cost {
     display: flex;
-    margin-left: 10px;
+    margin-left: -10px;
 }
 
 .input-cost__price {
@@ -274,7 +274,10 @@ aside > div > p > sup {
         margin-left: 60px;
         width: auto;
     }
-
+.input-cost {
+    
+    margin-left: 10px;
+}
     aside {
         position: fixed;
         bottom: 0;
