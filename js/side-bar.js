@@ -35,12 +35,12 @@ $('.jsOpenNavMenu').click(function() {
         $('.jsNavOverlay').addClass('active-filter-overlay').css('display', 'block')
     }
 });
-if (window.innerWidth < 1250) {
+/*if (window.innerWidth < 1250) {
     $('.jsOpenMenu').click(function() {
         $('.jsNavMenu').toggleClass('active-nav');
         $('.jsShowMenu').toggleClass('active-nav-drop')
     })
-}
+}*/
 $('.jsMenuPrev').click(function() {
     $('.jsNavMenu').toggleClass('active-nav');
     $('.jsShowMenu').toggleClass('active-nav-drop')

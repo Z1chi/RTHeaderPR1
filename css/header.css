@@ -223,17 +223,20 @@ body {
 
 .way > ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .way__link {
     list-style-type: none;
     color: #30408d;
-    white-space: nowrap;
+    white-space: normal;
 }
+
 
 .way > ul > li > a {
     text-decoration: none;
     border: none;
+    white-space: nowrap;
 }
 
 .way > ul > li > a > svg {
@@ -282,6 +285,8 @@ body {
         display: block;
         margin: auto 15px;
         cursor: pointer;
+        z-index: 998;
+        position: fixed;
     }
     .header-wrap__navParent {
         position: fixed;
@@ -308,7 +313,7 @@ body {
         transform: translateX(0);
     }
     .nav-logo >a {
-        margin: 0;
+        margin: 5px 15px
     }
     .nav-logo {
         display: flex;
@@ -316,7 +321,7 @@ body {
         margin: 0;
     }
     .navigation >a  {
-        margin: 0;
+        margin: 5px 15px;
     }
     .navigation {
         display: flex;
@@ -324,7 +329,7 @@ body {
         margin: 0;
     }
     .nav-pa > a {
-        margin: 0;
+        margin: 5px 15px;
     }
     .nav-pa  {
         display: flex;
@@ -342,7 +347,9 @@ body {
         text-align: left;
         border: none;
     }
-
+    .aside__side-bar__button__checkbox{
+        margin-left: 10px  ;
+    }
 }
 @media (max-width: 900px) {
     .iconChair {
@@ -351,9 +358,7 @@ body {
     .way {
         margin:  0  -35px 0;
     }
-    .aside__side-bar__button__checkbox{
-        margin-left: 10px  ;
-    }
+
 }
 @media (max-width: 1023px) {
     .border >button {
