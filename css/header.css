@@ -99,7 +99,7 @@ body {
     background-image: url("../img/bacgroundHeader1.jpg");
     border-radius: 0 33px 0 0;
     height: 90px;
-    width: 100%;
+    width: 95%;
     position: relative;
     z-index: 5;
     max-width: 1838px;
@@ -278,12 +278,13 @@ body {
 }
 .header-wrap__button_menu {
     display: none;
+
 }
 @media (max-width: 1365px) {
 
     .header-wrap__button_menu {
         display: block;
-        margin: auto 15px;
+        margin: -35px 0 0 15px;
         cursor: pointer;
         z-index: 998;
         position: fixed;
@@ -350,14 +351,19 @@ body {
     .aside__side-bar__button__checkbox{
         margin-left: 10px  ;
     }
+    .search {
+        width: 100%;
+        background-size: cover;
+    }
 }
 @media (max-width: 900px) {
     .iconChair {
         display: none;
     }
     .way {
-        margin:  0  -35px 0;
+        margin:  0 ;
     }
+
 
 }
 @media (max-width: 1023px) {
@@ -370,7 +376,7 @@ body {
     }
 
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     .searchCity__input {
 
         width: calc(100% - 45px);

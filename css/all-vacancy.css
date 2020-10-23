@@ -107,6 +107,37 @@ section{
     font-family: MullerRegular ,sans-serif;
     color: #868686;
 }
+@media (max-width: 900px) {
+    section {
+        margin: 0 15px;
+    }
+    .single-vacancy {
+        flex-direction: column;
+    }
 
+    .single-vacancy__block_right {
+        margin: -15px 0 0 ;
+    }
+
+    .single-vacancy__block-left
+    {
+        margin: 10px 5px 0 5px ;
+    }
+    .single-vacancy__info-job > * {
+        margin: 5px 0;
+    }
+    .single-vacancy__info-views >p{
+        margin-right: 10px;
+    }
+    .single-vacancy__block_right>img {
+        margin: 0 0 0 30%;
+        position: relative;
+        z-index: -1;
+    }
+    .single-vacancy__block_right>button {
+        margin: 0 0 5px 19%;
+    }
+
+}
 
 

@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 
+.Container__side-button_filter {
+    position: relative;
+    left: -100px;
+}
 
 aside > div > p {
     position: relative;
@@ -170,7 +174,7 @@ aside > div > p > sup {
 
 .input-cost {
     display: flex;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 
 .input-cost__price {
@@ -206,12 +210,91 @@ aside > div > p > sup {
 .btn-active {
     display: none;
 }
+.Container__side-button_filter {
+    display: none;
+    z-index: 2;
+}
+
+.active-filter {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+.active-filter-overlay {
+    opacity: .38;
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    z-index: 9;
+}
+
 
 @media (max-width: 1365px) {
 
     .svgRelative {
-        margin: 0;
+        margin: 0 0 0 30px;
     }
+
+
+
+}
+
+@media (max-width: 900px) {
+    .Container__side-button_filter{
+        border-radius: 18px;
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        left: 40%;
+        background-color: #dd2629;
+        height: 38px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: MullerRegular, sans-serif;
+        color: #ffffff;
+        border: none;
+        white-space: nowrap;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: background-color 0.5s;.single-vacancy
+    }
+    .Container__side-button_filter:hover {
+        background-color: #941515;
+        transition: background-color 0.5s;
+    }
+    .svgRelative>p {
+        margin: 0 0 15px 50px;
+    }
+    .aside__side-bar {
+        margin-left: 60px;
+        width: auto;
+    }
+
+    aside {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 450px;
+        height: 70%;
+        padding-top: 20px;
+        background-color: #fff;
+        z-index: 999;
+        transform: translateX(600px);
+        transition: all ease 1s;
+        overflow: auto;
+    }
+    .input-cost__submit {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 760px) {
 
 
 }
