@@ -21,7 +21,7 @@ body {
     z-index: -1;
 }
 
-.Container {
+.container {
     width: 100%;
     padding: 0;
 }
@@ -224,6 +224,8 @@ body {
 .way > ul {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin-left: 5px;
 }
 
 .way__link {

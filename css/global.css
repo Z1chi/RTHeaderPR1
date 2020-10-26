@@ -1,0 +1,83 @@
+
+.content_advertising {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+
+}
+
+.content_advertising__single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 270px;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.content_advertising__single > button {
+    border-radius: 18px;
+    background-color: #dd2629;
+    height: 38px;
+    max-width: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: MullerRegular, sans-serif;
+    color: #ffffff;
+    border: none;
+    white-space: nowrap;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.content_advertising__single > button:hover {
+    background-color: #941515;
+    transition: background-color 0.5s;
+}
+
+.content_advertising__single > img {
+    max-width: 160px;
+    height: auto;
+}
+
+.content_advertising__single__text > .advert__name-company {
+    font-family: MullerBold, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 0 0 20px 0;
+
+}
+
+.advert__style_font {
+    margin: 0 ;
+    font-family: MullerBold, sans-serif;
+    color: #8d7b7b;
+    font-size: 16px;
+}
+.advert__style_font-light {
+    font-family: MullerRegular,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 0 40px 0;
+    color: #8d7b7b;
+}
+.content_advertising__single >p {
+    font-family: MullerMedium, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    max-width: 160px;
+    margin: 20px 0 0 10%;
+}
+.advert__moloko {
+    background-color: #ddf0fb;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1018px) {
+
+
+}

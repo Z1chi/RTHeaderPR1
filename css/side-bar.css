@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-.Container__side-button_filter {
+.container__side-button_filter {
     position: relative;
     left: -100px;
 }
@@ -197,7 +197,7 @@ aside > div > p > sup {
     border: none;
     background-color: #dd2629;
     width: 200px;
-    margin: 0 0 0 45px;
+    margin: 0 0 30px 45px;
     transition: background-color 0.5s;
     cursor: pointer;
 }
@@ -210,7 +210,7 @@ aside > div > p > sup {
 .btn-active {
     display: none;
 }
-.Container__side-button_filter {
+.container__side-button_filter {
     display: none;
     z-index: 2;
 }
@@ -244,7 +244,7 @@ aside > div > p > sup {
 }
 
 @media (max-width: 900px) {
-    .Container__side-button_filter{
+    .container__side-button_filter{
         border-radius: 18px;
         display: block;
         position: fixed;
@@ -263,7 +263,7 @@ aside > div > p > sup {
         cursor: pointer;
         transition: background-color 0.5s;.single-vacancy
     }
-    .Container__side-button_filter:hover {
+    .container__side-button_filter:hover {
         background-color: #941515;
         transition: background-color 0.5s;
     }
@@ -273,6 +273,10 @@ aside > div > p > sup {
     .aside__side-bar {
         margin-left: 60px;
         width: auto;
+    }
+
+    .input-cost{
+        margin-left: 10px;
     }
 
     aside {
@@ -288,13 +292,7 @@ aside > div > p > sup {
         transition: all ease 1s;
         overflow: auto;
     }
-    .input-cost__submit {
-        margin-bottom: 30px;
-    }
-
-}
-
-@media (max-width: 760px) {
 
 
 }
+

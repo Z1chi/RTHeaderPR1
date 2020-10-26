@@ -22,6 +22,7 @@ section{
     align-items: center;
 
 }
+
 .single-vacancy__tegs  {
     cursor: pointer;
 }
@@ -69,7 +70,7 @@ section{
     white-space: nowrap;
     margin: 0 auto;
     cursor: pointer;
-    transition: background-color 0.5s;.single-vacancy
+    transition: background-color 0.5s;.
 }
 .single-vacancy__block_right>button:hover {
     background-color: #941515;
