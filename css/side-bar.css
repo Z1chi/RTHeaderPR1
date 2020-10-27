@@ -19,7 +19,12 @@ body {
     left: -100px;
 }
 
-aside > div > p {
+.catalog-vacancy {
+    position: sticky;
+    top: 100px;
+}
+
+.catalog-vacancy > div > p {
     position: relative;
     font-size: 30px;
     font-family: MullerBold, sans-serif;
@@ -28,7 +33,7 @@ aside > div > p {
     max-width: 330px;
 }
 
-aside > div > p > sup {
+.catalog-vacancy > div > p > sup {
     font-size: 10px;
     z-index: 36;
     color: #000000;
@@ -38,7 +43,6 @@ aside > div > p > sup {
 .svgRelative {
     position: relative;
     max-width: 330px;
-    margin-left: -30px;
     white-space: nowrap;
 }
 
@@ -55,8 +59,9 @@ aside > div > p > sup {
     left: 0;
 
 }
-.aside__side-bar__button__checkbox > label{
-    margin:  0 0 10px;
+
+.aside__side-bar__button__checkbox > label {
+    margin: 0 0 10px;
 }
 
 .aside__side-bar__button__checkbox_toggle {
@@ -69,6 +74,7 @@ aside > div > p > sup {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-left: 10px;
 }
 
 .aside__side-bar__button > svg {
@@ -123,7 +129,6 @@ aside > div > p > sup {
     font-size: 14px;
     position: relative;
 }
-
 
 
 .checkbox input {
@@ -197,7 +202,7 @@ aside > div > p > sup {
     border: none;
     background-color: #dd2629;
     width: 200px;
-    margin: 0 0 30px 45px;
+    margin: 0 0 10px 45px;
     transition: background-color 0.5s;
     cursor: pointer;
 }
@@ -210,6 +215,7 @@ aside > div > p > sup {
 .btn-active {
     display: none;
 }
+
 .container__side-button_filter {
     display: none;
     z-index: 2;
@@ -240,11 +246,10 @@ aside > div > p > sup {
     }
 
 
-
 }
 
-@media (max-width: 900px) {
-    .container__side-button_filter{
+@media (max-width: 1037px) {
+    .container__side-button_filter {
         border-radius: 18px;
         display: block;
         position: fixed;
@@ -261,21 +266,29 @@ aside > div > p > sup {
         white-space: nowrap;
         margin: 0 auto;
         cursor: pointer;
-        transition: background-color 0.5s;.single-vacancy
+        transition: background-color 0.5s;
+    . single-vacancy
     }
+
     .container__side-button_filter:hover {
         background-color: #941515;
         transition: background-color 0.5s;
     }
-    .svgRelative>p {
+
+    .svgRelative > p {
         margin: 0 0 15px 50px;
     }
+
     .aside__side-bar {
-        margin-left: 60px;
+
         width: auto;
     }
 
-    .input-cost{
+    .svgRelative {
+        display: none;
+    }
+
+    .input-cost {
         margin-left: 10px;
     }
 
@@ -283,7 +296,7 @@ aside > div > p > sup {
         position: fixed;
         bottom: 0;
         right: 0;
-        width: 450px;
+        width: 310px;
         height: 70%;
         padding-top: 20px;
         background-color: #fff;
@@ -293,6 +306,9 @@ aside > div > p > sup {
         overflow: auto;
     }
 
+    .catalog-vacancy {
+        top: 0;
+    }
 
 }
 

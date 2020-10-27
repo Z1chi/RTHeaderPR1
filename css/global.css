@@ -1,11 +1,14 @@
-
-.content_advertising {
-    flex-basis: 20%;
+.content_advertising__single>*{
+margin-left: 12%;
+}
+.content_vacancy {
+    flex-basis: 30%;
     display: flex;
     flex-direction: column;
     margin-right: 5px;
 
 }
+
 
 .content_advertising__single {
     display: flex;
@@ -14,6 +17,7 @@
     max-width: 270px;
     position: relative;
     margin-bottom: 55px;
+    padding: 40px;
 }
 
 .content_advertising__single > button {
@@ -28,7 +32,7 @@
     color: #ffffff;
     border: none;
     white-space: nowrap;
-    margin: 0;
+    margin: 0 0 0 10%;
     cursor: pointer;
     transition: background-color 0.5s;
 }
@@ -43,7 +47,7 @@
     height: auto;
 }
 
-.content_advertising__single__text > .advert__name-company {
+.advert__name-company {
     font-family: MullerBold, sans-serif;
     font-size: 20px;
     text-align: left;
@@ -74,10 +78,24 @@
 .advert__moloko {
     background-color: #ddf0fb;
     border-radius: 10px;
-    padding: 40px;
+
 }
 
-@media screen and (max-width: 1018px) {
+.content_advertising__single__text > img {
+    margin-bottom: 20px;
+    align-items: center;
+}
+@media screen and (max-width: 1096px) {
 
 
+    .content_vacancy {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    .content_advertising__single {
+     max-height: 450px;
+    }
+    .content-single {
+        flex-direction: column;
+    }
 }

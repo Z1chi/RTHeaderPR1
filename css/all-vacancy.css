@@ -30,6 +30,13 @@ section{
     color: #000000;
     font-family: MullerBold, sans-serif;
     font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.info-job__name-vacancy:hover {
+    color: #dd2629;
+    transition: color 0.5s;
 }
 .single-vacancy__info-views >p {
     color: #636467;
@@ -108,9 +115,9 @@ section{
     font-family: MullerRegular ,sans-serif;
     color: #868686;
 }
-@media (max-width: 900px) {
+@media (max-width: 1037px) {
     section {
-        margin: 0 15px;
+        margin: 0 0 0 15px;
     }
     .single-vacancy {
         flex-direction: column;

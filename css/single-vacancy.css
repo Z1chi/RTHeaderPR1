@@ -1,10 +1,10 @@
 section {
-    flex-basis: 80%;
+    flex-basis: 70%;
     margin-bottom: 20px;
     max-width: 1280px;
 }
 
-.content {
+.content-single {
     display: flex;
     justify-content: space-between;
 
@@ -202,6 +202,7 @@ section {
         flex-wrap: wrap;
     }
 
+
 }
 
 
@@ -214,13 +215,9 @@ section {
         top: 40px ;
     }
     .single-vacancy {
-        flex-direction: column;
-    }
-
-
-    .single-vacancy {
-
+        padding-right: 0;
         width: 100%;
+        flex-direction: column;
     }
 
     .single-vacancy>.single-vacancy__button-send-summary{
@@ -263,4 +260,12 @@ section {
         flex-direction: column;
     }
 
+    .single-vacancy__info-views {
+        flex-direction: row;
+    }
+    .way > ul > li > a {
+        white-space: normal;
+    }
+
 }
+

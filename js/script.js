@@ -1,89 +1,104 @@
-/* + / - Скрытый сайдбар */
-$('.jsOpenCheck').click(function() {
-    if ($(this).hasClass("open-services-mob")) {
-        $(this).removeClass('open-services-mob').next().slideDown();
-        let qw = $(this).find('.jsBtnPlus');
-        let qwe = $(this).find('.jsBtnMinus');
-        setTimeout(function() {
-            qw.toggleClass('btn-active')
-        }, 250);
-        setTimeout(function() {
-            qwe.toggleClass('btn-active')
-        }, 250)
-    } else {
-        $(this).addClass(' open-services-mob').next().slideUp();
-        let qw = $(this).find('.jsBtnPlus');
-        let qwe = $(this).find('.jsBtnMinus');
-        setTimeout(function() {
-            qw.toggleClass('btn-active')
-        }, 250);
-        setTimeout(function() {
-            qwe.toggleClass('btn-active')
-        }, 250)
+$(document).ready(function () {
+
+
+    /* + / - Скрытый сайдбар */
+
+
+    if ($('.jsOpenCheck').length > 0) {
+        $('.jsOpenCheck').click(function () {
+            if ($(this).hasClass("open-services-mob")) {
+                $(this).removeClass('open-services-mob').next().slideDown();
+                let qw = $(this).find('.jsBtnPlus');
+                let qwe = $(this).find('.jsBtnMinus');
+                setTimeout(function () {
+                    qw.toggleClass('btn-active')
+                }, 250);
+                setTimeout(function () {
+                    qwe.toggleClass('btn-active')
+                }, 250)
+            } else {
+                $(this).addClass(' open-services-mob').next().slideUp();
+                let qw = $(this).find('.jsBtnPlus');
+                let qwe = $(this).find('.jsBtnMinus');
+                setTimeout(function () {
+                    qw.toggleClass('btn-active')
+                }, 250);
+                setTimeout(function () {
+                    qwe.toggleClass('btn-active')
+                }, 250)
+            }
+        });
+    }
+    /* Скрывающиеся навигационное меню */
+    if ($('.jsOpenNavMenu').length > 0) {
+        $('.jsOpenNavMenu').click(function () {
+            $('.jsOpenNavMenu').toggleClass('activeBtn');
+            $('.jsNavMenu').toggleClass('active-nav');
+            if ($('.jsNavOverlay').hasClass('active-filter-overlay')) {
+                $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
+                $('.jsNavMenu').removeClass('active-nav');
+                $('.jsShowMenu').removeClass('active-nav-drop')
+            } else {
+                $('.jsNavOverlay').addClass('active-filter-overlay').css('display', 'block')
+            }
+        });
+    }
+    if ($('.jsMenuPrev').length > 0) {
+    $('.jsMenuPrev').click(function () {
+        $('.jsNavMenu').toggleClass('active-nav');
+        $('.jsShowMenu').toggleClass('active-nav-drop')
+    });
+    }
+    if ($('.jsNavOverlay').length > 0) {
+        $('.jsNavOverlay').click(function () {
+            $('.jsOpenNavMenu').removeClass('activeBtn');
+            $('.jsNavMenu').removeClass('active-nav');
+            $('.jsShowMenu').removeClass('active-nav-drop');
+            $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none')
+        });
+    }
+    /*
+
+    Для скрытия сайд-бара и отображения кнопки его откытия на мобильной версии
+
+     */
+    if ($('.jsShowFilter').length > 0) {
+    $('.jsShowFilter').click(function () {
+        $('.jsOpenFilter').addClass('active-filter');
+        $('.jsFilterOverlay').addClass('active-filter-overlay').css({
+            'transition': 'all ease 1s'
+        });
+        $('.jsShowFilter').css({
+            'display': 'none',
+            'transition': 'all ease 0s'
+        })
+    });
+    }
+    if ($('.jsHideFilter').length > 0) {
+    $('.jsHideFilter').click(function () {
+        $('.jsOpenFilter').removeClass('active-filter');
+        $('.jsFilterOverlay').removeClass('active-filter-overlay').css({
+            'transition': 'all ease 0s'
+        });
+        $('.jsShowFilter').css({
+            'display': 'block',
+            'transition': 'all ease 1s'
+        })
+    });
+    }
+    if ($('.jsFilterOverlay').length > 0) {
+        $('.jsFilterOverlay').click(function () {
+            $('.jsOpenFilter').removeClass('active-filter');
+            $('.jsFilterOverlay').removeClass('active-filter-overlay').css({
+                'transition': 'all ease 0s'
+            });
+            $('.jsShowFilter').css({
+                'display': 'block',
+                'transition': 'all ease 1s'
+            })
+        });
     }
 });
-/* Скрывающиеся навигационное меню */
-
-$('.jsOpenNavMenu').click(function() {
-    $('.jsOpenNavMenu').toggleClass('activeBtn');
-    $('.jsNavMenu').toggleClass('active-nav');
-    if ($('.jsNavOverlay').hasClass('active-filter-overlay')) {
-        $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
-        $('.jsNavMenu').removeClass('active-nav');
-        $('.jsShowMenu').removeClass('active-nav-drop')
-    } else {
-        $('.jsNavOverlay').addClass('active-filter-overlay').css('display', 'block')
-    }
-});
-
-$('.jsMenuPrev').click(function() {
-    $('.jsNavMenu').toggleClass('active-nav');
-    $('.jsShowMenu').toggleClass('active-nav-drop')
-});
-$('.jsNavOverlay').click(function() {
-    $('.jsOpenNavMenu').removeClass('activeBtn');
-    $('.jsNavMenu').removeClass('active-nav');
-    $('.jsShowMenu').removeClass('active-nav-drop');
-    $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none')
-});
-
-/*
-
-Для скрытия сайд-бара и отображения кнопки его откытия на мобильной версии
-
- */
-
-$('.jsShowFilter').click(function() {
-    $('.jsOpenFilter').addClass('active-filter');
-    $('.jsFilterOverlay').addClass('active-filter-overlay').css({
-        'transition': 'all ease 1s'
-    });
-    $('.jsShowFilter').css({
-        'display': 'none',
-        'transition': 'all ease 0s'
-    })
-});
-$('.jsHideFilter').click(function() {
-    $('.jsOpenFilter').removeClass('active-filter');
-    $('.jsFilterOverlay').removeClass('active-filter-overlay').css({
-        'transition': 'all ease 0s'
-    });
-    $('.jsShowFilter').css({
-        'display': 'block',
-        'transition': 'all ease 1s'
-    })
-});
-$('.jsFilterOverlay').click(function() {
-    $('.jsOpenFilter').removeClass('active-filter');
-    $('.jsFilterOverlay').removeClass('active-filter-overlay').css({
-        'transition': 'all ease 0s'
-    });
-    $('.jsShowFilter').css({
-        'display': 'block',
-        'transition': 'all ease 1s'
-    })
-});
-
 
 /*
 'use strict';
