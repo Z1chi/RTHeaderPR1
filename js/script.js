@@ -30,16 +30,33 @@ $(document).ready(function () {
         });
     }
     /* Скрывающиеся навигационное меню */
-    if ($('.jsOpenNavMenu').length > 0) {
-        $('.jsOpenNavMenu').click(function () {
-            $('.jsOpenNavMenu').toggleClass('activeBtn');
+    const navMenu = $('.jsOpenNavMenu');
+    if (navMenu.length > 0) {
+        $(navMenu).click(function () {
+            $(navMenu).toggleClass('activeBtn');
             $('.jsNavMenu').toggleClass('active-nav');
             if ($('.jsNavOverlay').hasClass('active-filter-overlay')) {
                 $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
                 $('.jsNavMenu').removeClass('active-nav');
-                $('.jsShowMenu').removeClass('active-nav-drop')
+                $('.jsShowMenu').removeClass('active-nav-drop');
+                let logo = $(this).find('.jsMenuLogo');
+                let logoActive = $(this).find('.jsMenuLogoActive');
+                setTimeout(function () {
+                    logo.toggleClass('btn-active')
+                }, 150);
+                setTimeout(function () {
+                    logoActive.toggleClass('btn-active')
+                }, 150)
             } else {
-                $('.jsNavOverlay').addClass('active-filter-overlay').css('display', 'block')
+                $('.jsNavOverlay').addClass('active-filter-overlay').css('display', 'block');
+                let logo = $(this).find('.jsMenuLogo');
+                let logoActive = $(this).find('.jsMenuLogoActive');
+                setTimeout(function () {
+                    logo.toggleClass('btn-active')
+                }, 150);
+                setTimeout(function () {
+                    logoActive.toggleClass('btn-active')
+                }, 150)
             }
         });
     }
@@ -51,10 +68,18 @@ $(document).ready(function () {
     }
     if ($('.jsNavOverlay').length > 0) {
         $('.jsNavOverlay').click(function () {
-            $('.jsOpenNavMenu').removeClass('activeBtn');
+            $(navMenu).removeClass('activeBtn');
             $('.jsNavMenu').removeClass('active-nav');
             $('.jsShowMenu').removeClass('active-nav-drop');
-            $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none')
+            $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
+            let logo = $('.jsOpenNavMenu').find('.jsMenuLogo');
+            let logoActive = $('.jsOpenNavMenu').find('.jsMenuLogoActive');
+            setTimeout(function () {
+                logo.toggleClass('btn-active')
+            }, 150);
+            setTimeout(function () {
+                logoActive.toggleClass('btn-active')
+            }, 150)
         });
     }
     /*

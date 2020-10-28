@@ -8,7 +8,9 @@ margin-left: 12%;
     margin-right: 5px;
 
 }
-
+.btn-active {
+    display: none;
+}
 
 .content_advertising__single {
     display: flex;
@@ -24,7 +26,7 @@ margin-left: 12%;
     border-radius: 18px;
     background-color: #dd2629;
     height: 38px;
-    max-width: 200px;
+    width: 200px;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 12px;
@@ -98,4 +100,19 @@ margin-left: 12%;
     .content-single {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 583px) {
+    .content_vacancy{
+        flex-direction: column;
+        margin-top: -60px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .content_advertising__single{
+        margin: 5px auto;
+
+    }
+
 }

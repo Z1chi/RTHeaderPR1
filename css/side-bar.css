@@ -212,9 +212,7 @@ body {
     transition: background-color 0.5s;
 }
 
-.btn-active {
-    display: none;
-}
+
 
 .container__side-button_filter {
     display: none;
@@ -254,7 +252,7 @@ body {
         display: block;
         position: fixed;
         bottom: 10px;
-        left: 40%;
+        left: 32%;
         background-color: #dd2629;
         height: 38px;
         padding: 10px 20px;

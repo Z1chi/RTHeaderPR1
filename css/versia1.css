@@ -1,0 +1,254 @@
+.button-cover * {
+    font-family: MullerMedium, sans-serif;
+    font-size: 15px;
+
+}
+
+.button-cover {
+    margin-top: 10px;
+    border: 1px solid #30408d;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.button {
+    position: relative;
+    width: 280px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Button 10 */
+#button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+    content: '';
+    left: 0;
+
+    background-color: #30408d;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+    background-color: #fcebeb;
+}
+
+#button-10 .knobs:after {
+    content: 'Работодатель';
+    right: 0;
+    color: #d43a30;
+}
+
+#button-10 .knobs span {
+    display: inline-block;
+    left: 0;
+    color: #fff;
+    z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+    color: #d43a30;
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+    left: 140px;
+    background-color: #30408d;
+    color: #fff;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+    color: #fff;
+}
+
+.search {
+    background-image: url("../img/header_1versiya.png");
+    background-color: #0253a3;
+    border-radius: 0 33px 0 0;
+    height: 170px;
+    background-size: cover;
+}
+
+.background__after_search {
+    position: absolute;
+    left: -70px;
+    top: 150px;
+    background-image: url("../img/форма_заявки.png");
+    width: 107%;
+    height: 120px;
+    border-radius: 0 0 33px 0;
+    z-index: -1;
+}
+
+.svgRelative {
+    position: relative;
+    white-space: nowrap;
+    font-family: MullerBold, sans-serif;
+    font-size: 35px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.svgRelative__sup_position {
+    position: relative;
+}
+
+.svgRelative__sup_position > svg {
+    color: #dd2629;
+    position: absolute;
+    z-index: -1;
+    left: -48px;
+    top: -27px;
+}
+
+.container__section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconChair {
+    position: absolute;
+    top: 60px;
+    left: 1%;
+}
+
+.content-wrapper__p__a {
+    text-decoration: underline;
+    font-family: MullerExtraBold, sans-serif;
+    color: #000;
+    cursor: pointer;
+
+
+}
+
+.content-wrapper__p {
+    max-width: 1100px;
+    font-family: MullerRegular, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 18px;
+    margin: 0 10px;
+}
+
+.content-wrapper__callOut {
+    display: flex;
+    margin-top: 30px;
+}
+
+.content-wrapper__callOut-p {
+    font-family: MullerExtraBold, sans-serif;
+    font-size: 22px;
+    color: #dd3d34;
+    margin-left: 10px;
+}
+
+.content-wrapper__callOut-border-button {
+    border-radius: 28px;
+    border: 1px solid #f9dfdf;
+    padding: 7px 8px;
+    width: 174px;
+    height: 42px;
+    margin-left: 30px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.content-wrapper__callOut-button {
+    font-family: MullerExtraBold, sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #dd2629;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.content-wrapper__company-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper__company-logo_triple {
+    margin: 15px 5px;
+}
+
+.content-wrapper__company-logo_single {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.content-wrapper__company-logo_single >a {
+    cursor: pointer;
+}
+.content-wrapper__company-logo_single > p {
+
+    font-family: MullerRegular, sans-serif;
+    font-size: 12px;
+}
+
+.content-wrapper__company-logo_single > p > span {
+    font-family: MullerMedium, sans-serif;
+    color: #2c398b;
+}
+
+@media (max-width: 1365px) {
+    .navigation {
+        margin: auto;
+    }
+
+    .nav-logo > a {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .nav-logo {
+        margin: 240px 0 30px 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-pa {
+        flex-direction: column;
+        margin: 120px 0 0 20px;
+        align-items: flex-start;
+    }
+
+    .nav-pa > .mobile__font-size {
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1023px) {
+    .header-wrap {
+        height: 105px;
+    }
+
+    .svgRelative {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+}

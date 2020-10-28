@@ -12,11 +12,10 @@ section {
 .single-vacancy {
     border: 1px solid #acacac;
     display: flex;
-    margin: 0 auto;
+    margin: 0 30px 0 20%;
     align-items: center;
-    width: 70%;
+    width: auto;
     position: relative;
-    padding-right: 200px;
 }
 .single-vacancy__info-views {
     display: inline-flex;
@@ -193,31 +192,68 @@ section {
 
 }
 .single-vacancy__recommendation >p {
-    margin-left: 6% ;
+    margin-left: 20% ;
 }
 
+@media (max-width: 1365px) {
+    .single-vacancy {
+        margin: 0 10px;
+    }
+    .single-vacancy__recommendation >p {
+        margin-left: 6% ;
+    }
+}
 
+@media (max-width: 1096px) {
+    .single-vacancy {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .single-vacancy__block_right {
+        margin: -15px 0 0 ;
+    }
+
+    .single-vacancy__block-left
+    {
+        margin: 10px 5px 0 5px ;
+    }
+
+    .single-vacancy__info-views >p{
+        margin-right: 10px;
+    }
+    .single-vacancy__block_right>img {
+        margin: 0 0 0 30%;
+        position: absolute;
+        z-index: -1;
+        top: 30px;
+        right: 20px;
+    }
+    .single-vacancy__block_right>button {
+        margin: 0 0 25px 5px;
+        position: relative;
+        bottom: -20px;
+    }
+}
 @media (max-width: 826px) {
     .single-vacancy__button-send-summary__ul_flex {
         flex-wrap: wrap;
     }
 
-
 }
 
 
-
 @media (max-width: 728px) {
-    section {
-        margin: 0 15px;
-    }
+
     .single-vacancy__img{
         top: 40px ;
     }
+
     .single-vacancy {
         padding-right: 0;
-        width: 100%;
+        width: auto;
         flex-direction: column;
+        margin: 0 10px 0 10px;
     }
 
     .single-vacancy>.single-vacancy__button-send-summary{
@@ -238,34 +274,46 @@ section {
 
     .single-vacancy__button-send-summary>button {
         margin: auto ;
+        width: 200px;
     }
 
 }
 
-@media (max-width: 478px) {
+@media (max-width: 522px) {
+    .single-vacancy__button-send-summary>button {
+        margin: 0 ;
+    }
     .single-vacancy__img {
         display: none;
     }
+    .single-vacancy__button-send-summary {
+        margin-bottom: 0;
+    }
     .single-vacancy__button-send-summary >p{
         padding: 0;
-        margin: 10px auto;
+        margin: 10px 0;
 
     }
     .single-vacancy__button-send-summary__ul_flex {
         padding: 0;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .single-vacancy__info-job > * {
         flex-direction: column;
     }
-
+    .single-vacancy__block_right>img {
+        display:  none;
+    }
     .single-vacancy__info-views {
         flex-direction: row;
+        margin: 5px auto;
     }
     .way > ul > li > a {
         white-space: normal;
     }
+
+
 
 }
 
