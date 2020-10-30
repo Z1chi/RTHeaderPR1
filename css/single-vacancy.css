@@ -25,6 +25,8 @@ section {
 }
 .single-vacancy__tegs  {
     cursor: pointer;
+    width: 70%;
+    margin-right: -100px;
 }
 .info-job__name-vacancy {
     color: #000000;
@@ -207,11 +209,11 @@ section {
 @media (max-width: 1096px) {
     .single-vacancy {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         position: relative;
     }
     .single-vacancy__block_right {
-        margin: -15px 0 0 ;
+        margin:0 10px 10px 0 ;
     }
 
     .single-vacancy__block-left
@@ -229,15 +231,12 @@ section {
         top: 30px;
         right: 20px;
     }
-    .single-vacancy__block_right>button {
-        margin: 0 0 25px 5px;
-        position: relative;
-        bottom: -20px;
-    }
+
 }
 @media (max-width: 826px) {
     .single-vacancy__button-send-summary__ul_flex {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        padding-left: 10px;
     }
 
 }
@@ -253,7 +252,7 @@ section {
         padding-right: 0;
         width: auto;
         flex-direction: column;
-        margin: 0 10px 0 10px;
+        margin: 0 10px 0 5px;
     }
 
     .single-vacancy>.single-vacancy__button-send-summary{
@@ -279,9 +278,13 @@ section {
 
 }
 
-@media (max-width: 522px) {
+@media (max-width: 550px) {
     .single-vacancy__button-send-summary>button {
         margin: 0 ;
+    }
+    .single-vacancy__tegs {
+        width: 100%;
+        margin-right: 0;
     }
     .single-vacancy__img {
         display: none;
@@ -298,6 +301,7 @@ section {
         padding: 0;
         margin: 0;
     }
+
 
     .single-vacancy__info-job > * {
         flex-direction: column;

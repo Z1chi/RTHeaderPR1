@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="font/font.css" type="text/css">
     <link rel="stylesheet" href="css/single-vacancy.css">
     <link rel="stylesheet" href="css/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>
+
 
 
 </head>
@@ -47,19 +49,25 @@
     </header>
     <div class="search">
         <form class="formSearch">
-            <div class="searchCity">
-                <input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">
-                <button><i class="fa fa-times"></i></button>
-            </div>
+        <!--    <div class="searchCity">-->
+                <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
+                <label for="select2City" class="formSearch__select">
+                    <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
+                    <option value="dnr">ДНР</option>
+                    <option value="lnr">ЛНР</option>
+                </select>
+                </label>
+                <!--<button><i class="fa fa-times"></i></button>-->
+            <!--</div>-->
             <div class="searchCity">
                 <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
                        placeholder="Должность или компания">
                 <button class="searchCity__button_color"><i class="fa fa-search"></i></button>
             </div>
 
-            <div class="border">
-                <button>Найти вакансии</button>
-            </div>
+           <!-- <div class="border">-->
+                <button class="border_before">Найти вакансии</button>
+           <!-- </div>-->
         </form>
         <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>
     </div>
@@ -398,6 +406,7 @@
     </div>
 </div>
 <script src="js/jQuery%20v3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

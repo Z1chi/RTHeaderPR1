@@ -17,6 +17,8 @@ body {
 .container__side-button_filter {
     position: relative;
     left: -100px;
+    display: none;
+    z-index: 2;
 }
 
 .catalog-vacancy {
@@ -212,13 +214,6 @@ body {
     transition: background-color 0.5s;
 }
 
-
-
-.container__side-button_filter {
-    display: none;
-    z-index: 2;
-}
-
 .active-filter {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -236,13 +231,10 @@ body {
     z-index: 9;
 }
 
-
 @media (max-width: 1365px) {
-
     .svgRelative {
         margin: 0 0 0 30px;
     }
-
 
 }
 
@@ -252,7 +244,8 @@ body {
         display: block;
         position: fixed;
         bottom: 10px;
-        left: 32%;
+        left: 50%;
+        transform: translateX(-50%);
         background-color: #dd2629;
         height: 38px;
         padding: 10px 20px;

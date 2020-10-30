@@ -1,3 +1,18 @@
+button{
+    outline: none;
+}
+input {
+    outline: none;
+}
+select {
+    outline: none;
+    text-decoration: none;
+    border: none    ;
+}
+.select2-container .select2-selection--single{
+    outline: none!important;
+}
+
 .content_advertising__single>*{
 margin-left: 12%;
 }
@@ -93,6 +108,7 @@ margin-left: 12%;
     .content_vacancy {
         flex-direction: row;
         flex-basis: 100%;
+        justify-content: space-around;
     }
     .content_advertising__single {
      max-height: 450px;

@@ -1,4 +1,6 @@
-
+button {
+    border: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -66,7 +68,7 @@ body {
 
 .nav-pa {
 
-    margin: auto;
+    margin:30px auto;
 }
 
 .nav-pa > a {
@@ -107,21 +109,36 @@ body {
     max-width: 1838px;
 }
 
-.formSearch > div {
-    margin: 15px 15px 0;
+.searchCity {
+    margin: 15px 30px 0;
 }
 
 .searchCity {
     position: relative;
+   /* border-radius: 50px;
+    border: 1px solid #636467;*/
+}
+
+.searchCity__input {
+    position: relative;
+}
+
+
+.searchCity::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    padding: 23px 247px;
     border-radius: 50px;
     border: 1px solid #636467;
 }
-
-.searchCity >input {
-
-    position: relative;
-    z-index: 80;
+.searchCity__select {
+    appearance: none;
+    width: 200px;
 }
+
+
 .searchCity > .searchCity__button_color {
     background-color: #dd2629;
     transition: background-color 0.5s;
@@ -144,6 +161,7 @@ body {
 .formSearch {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .searchCity > button {
@@ -155,7 +173,7 @@ body {
     z-index: 90;
 }
 
-.searchCity > .fa fa-times {
+.searchCity > .fa .fa-times {
     font-family: MullerBold, sans-serif;
 }
 
@@ -205,6 +223,9 @@ body {
     width: 0;
 }
 
+.presentation {
+    background-image: url("../img/treugol.svg");
+}
 .navigation_active {
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -227,7 +248,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-left: 5px;
+    margin: 10px 0 10px 5px;
 }
 
 .way__link {
@@ -255,7 +276,35 @@ body {
 .navigation {
     margin: auto 60px;
 }
+.border_before {
+    position: relative;
+    border-radius: 18px;
+    background-color: #dd2629;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: MullerRegular, sans-serif;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: background-color 0.5s;
+    height: 35px;
+    width: 170px;
+    margin-top: 13px;
+}
+.border_before:hover {
+    background-color: #941515;
+    transition: background-color 0.5s;
+}
 
+.border_before::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -9px;
+    padding: 23px 93px;
+    border-radius: 50px;
+    border: 1px solid #636467;
+}
 
 .filter-overlay {
     position: fixed;
@@ -283,6 +332,55 @@ body {
 .header-wrap__button_menu {
     display: none;
 
+}
+.select2City {
+    position: relative;
+}
+.select2City:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    padding: 23px 247px;
+    border-radius: 50px;
+    border: 1px solid #636467;
+    z-index: 9999999;
+
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    margin-right: 0!important;
+    margin-top: 2px!important;
+    padding-right: 9px!important;
+}
+.select2-container--default .select2-selection--single {
+    border: none !important;
+}
+.select2-dropdown {
+    border: none !important;
+}
+
+.formSearch__select {
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding: 2px 7px;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+    margin-left: 5px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    font-family: MullerRegular, sans-serif !important;
+    font-size: 14px    !important;
+}
+.select2-container--default .select2-results>.select2-results__options {
+    font-family: MullerRegular, sans-serif !important;
+    font-size: 14px    !important;
+}
+.select2-selection__arrow {
+    display: none;
+}
+.searchCity__select {
+    margin-top: 16px;
 }
 @media (max-width: 1365px) {
 
@@ -323,14 +421,14 @@ body {
     }
     .nav-logo {
         display: flex;
-        margin: 55px 0 35px 11%;
+       /* margin: 55px 0 35px 11%;*/
     }
     .navigation >a  {
-        margin: 5px 35px;
+        margin: 5px 35px 10px;
         font-size: 28px;
         color: #FFFFFF;
         height: auto;
-        margin-bottom: 10px;
+
     }
     .navigation {
         display: flex;
@@ -348,7 +446,7 @@ body {
     .nav-pa  {
         display: flex;
         align-items: center;
-        margin: 0 0 0 9%;
+      /*  margin: 0 0 0 9%;*/
     }
 
     .navigation_active {
@@ -392,6 +490,11 @@ body {
         flex-direction: column;
         height: 225px;
     }
+    .searchCity::before {
+        content: '';
+        padding: 23px 147px;
+
+    }
 }
 
 @media (max-width: 900px) {
@@ -403,18 +506,24 @@ body {
 
 @media (max-width: 760px) {
     .searchCity > .searchCity__button_color{
-        right: -70px;
+        right: -60px;
     }
     .searchVacancy{
-        width: 160px;
+        width: 190px;
     }
-
-  .border {
+    .searchCity::before {
+        content: '';
+        padding: 23px 117px;
+    }
+  .border_before {
       display: none;
   }
 
     .formSearch {
         justify-content: flex-start;
+    }
+    .formSearch > div {
+
     }
 
 }
@@ -423,15 +532,19 @@ body {
     .header-wrap__button_menu {
         margin: 10px 0 0 4px;
     }
-
+    .formSearch__select{
+        margin-bottom: 20px;
+    }
     .search {
         height: 150px;
     }
     .way {
         margin:  0;
     }
+    .way__link >a >span {
+        white-space: normal;
+    }
     .way > ul > li > a > svg {
-
        margin:  0 10px -5px 0;
     }
     .nav-pa {
@@ -444,17 +557,34 @@ body {
         margin: 5px;
     }
     .nav-logo {
-        margin: 45px 0 0 10px;
+        margin: 45px auto 0;
     }
-    .searchCity >input {
+   /* .searchCity__input{
         width: calc( 100% - 45px);
-    }
+    }*/
+   /* .searchCity__select {
+        width: calc(100% - 15px);
+    }*/
     .formSearch {
         flex-direction: column;
     }
 
 }
 
+@media (max-width: 420px) {
+    .nav-logo {
+        margin: 20px 2px 0;
+    }
+    .nav-logo >a {
+        margin: 45px 5px 0;
+        font-size: 12px;
+    }
+    .nav-pa>a {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+}
 
 
 
