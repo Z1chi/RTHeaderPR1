@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/header.css" type="text/css">
     <link rel="stylesheet" href="font/font.css" type="text/css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/versia1.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
     <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>
 
 </head>
@@ -22,7 +23,7 @@
             <img class="jsMenuLogo " src="./img/grid.png" height="34" width="34"/>
             <img class="jsMenuLogoActive btn-active" src="./img/grid_active.png" height="34" width="34"/>
         </div>
-        <div class="filter-overlay nav-overlay jsNavOverlay" style="display: none;"></div>
+        <div class="filter-overlay nav-overlay jsNavOverlay" style="display: block;"></div>
 
         <div class="jsNavMenu header-wrap__navParent">
             <nav class="nav-logo">
@@ -55,19 +56,25 @@
     <div class="search">
 
         <form class="formSearch">
-            <div class="searchCity">
-                <input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">
-                <button><i class="fa fa-times"></i></button>
-            </div>
+            <!--    <div class="searchCity">-->
+            <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
+            <label class="formSearch__select">
+                <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
+                    <option value="dnr">ДНР</option>
+                    <option value="lnr">ЛНР</option>
+                </select>
+            </label>
+            <!--<button><i class="fa fa-times"></i></button>-->
+            <!--</div>-->
             <div class="searchCity">
                 <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
                        placeholder="Должность или компания">
                 <button class="searchCity__button_color"><i class="fa fa-search"></i></button>
             </div>
 
-            <div class="border">
-                <button>Найти вакансии</button>
-            </div>
+            <!-- <div class="border">-->
+            <button class="border_before">Найти вакансии</button>
+            <!-- </div>-->
         </form>
         <div class="iconChair"><img src="./img/icon-chair_versiya1.png"></div>
         <div class="background__after_search">
@@ -121,73 +128,57 @@
                 размещением на маркетплейсе, эффективно управляем ценами и поставками</p>
             <div class="content-wrapper__callOut"><p class="content-wrapper__callOut-p">450 000 компаний подбирают
                 сотрудников на Rabota.today</p>
-                <div class="content-wrapper__callOut-border-button">
-                    <button class="content-wrapper__callOut-button">Разместить резюме</button>
-                </div>
+                <!--<div class="content-wrapper__callOut-border-button">-->
+                <button class="content-wrapper__callOut-button">Разместить резюме</button>
+                <!--</div>-->
             </div>
             <div class="content-wrapper__company-logo">
-                <div class="content-wrapper__company-logo_logo">
 
 
-                    <div class="content-wrapper__company-logo_triple">
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                    </div>
-                    <div class="content-wrapper__company-logo_triple">
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                    </div>
-                </div>
-                <div class="content-wrapper__company-logo_logo">
-                    <div class="content-wrapper__company-logo_triple">
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png"></a></div>
-                            <p><span>120 вакансий</span> компании</p></div>
-                    </div>
-                    <div class="content-wrapper__company-logo_triple">
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                        <div class="content-wrapper__company-logo_single">
-                            <div class="content-wrapper__company-logo_single "><a><img
-                                    src="./img/Слой_13_копия.png"></a></div>
-                            </a><p><span>120 вакансий</span> компании</p></div>
-                    </div>
-                </div>
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+
+
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+
+
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single">
+                            <img src="./img/perekrestok-098b490ef17f07b82dd95d9d4354472b.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+
+
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+                        <a class="content-wrapper__company-logo_single ">
+                            <img src="./img/Слой_13_копия.png">
+                            <p><span>120 вакансий</span> компании</p></a>
+
+
             </div>
             <div class="content-wrapper__search-job">
                 <div class="content-wrapper__search-job__content-block-text">
@@ -275,40 +266,39 @@
             </div>
             <div class="footer__usefull-links">
                 <div class="footer_bacground"></div>
-                <div class="footer__usefull-links__column">
-                    <div class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
-                        <ul>
-                            <li><a href="" class="usefull-link">О компании</a></li>
-                            <li><a href="" class="usefull-link">Наши вакансии</a></li>
-                            <li><a href="" class="usefull-link">Реклама на сайте</a></li>
-                            <li><a href="" class="usefull-link">Требования к ПО</a></li>
-                            <li><a href="" class="usefull-link">Защита персональных данных</a></li>
-                            <li><a href="" class="usefull-link">Безопасный HeadHunter</a></li>
-                            <li><a href="" class="usefull-link">Этика и компллаенс</a></li>
-                            <li><a href="" class="usefull-link">HeadHunter API</a></li>
-                            <li><a href="" class="usefull-link">Партнерам</a></li>
-                            <li><a href="" class="usefull-link">Инвесторам</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
-                        <ul>
-                            <li><a href="" class="usefull-link">О компании</a></li>
-                            <li><a href="" class="usefull-link">Наши вакансии</a></li>
-                            <li><a href="" class="usefull-link">Реклама на сайте</a></li>
-                            <li><a href="" class="usefull-link">Требования к ПО</a></li>
-                            <li><a href="" class="usefull-link">Защита персональных данных</a></li>
-                            <li><a href="" class="usefull-link">Безопасный HeadHunter</a></li>
-                            <li><a href="" class="usefull-link">Этика и компллаенс</a></li>
-                            <li><a href="" class="usefull-link">HeadHunter API</a></li>
-                            <li><a href="" class="usefull-link">Партнерам</a></li>
-                            <li><a href="" class="usefull-link">Инвесторам</a></li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="footer__usefull-links__column">
-                    <div class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
-                        <ul>
+
+                        <ul class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
+                            <li><a href="" class="usefull-link">О компании</a></li>
+                            <li><a href="" class="usefull-link">Наши вакансии</a></li>
+                            <li><a href="" class="usefull-link">Реклама на сайте</a></li>
+                            <li><a href="" class="usefull-link">Требования к ПО</a></li>
+                            <li><a href="" class="usefull-link">Защита персональных данных</a></li>
+                            <li><a href="" class="usefull-link">Безопасный HeadHunter</a></li>
+                            <li><a href="" class="usefull-link">Этика и компллаенс</a></li>
+                            <li><a href="" class="usefull-link">HeadHunter API</a></li>
+                            <li><a href="" class="usefull-link">Партнерам</a></li>
+                            <li><a href="" class="usefull-link">Инвесторам</a></li>
+                        </ul>
+
+
+                        <ul class="footer__usefull-links__single-block "><p class="linkRabotaToday">Rabota Today</p>
+                            <li><a href="" class="usefull-link">О компании</a></li>
+                            <li><a href="" class="usefull-link">Наши вакансии</a></li>
+                            <li><a href="" class="usefull-link">Реклама на сайте</a></li>
+                            <li><a href="" class="usefull-link">Требования к ПО</a></li>
+                            <li><a href="" class="usefull-link">Защита персональных данных</a></li>
+                            <li><a href="" class="usefull-link">Безопасный HeadHunter</a></li>
+                            <li><a href="" class="usefull-link">Этика и компллаенс</a></li>
+                            <li><a href="" class="usefull-link">HeadHunter API</a></li>
+                            <li><a href="" class="usefull-link">Партнерам</a></li>
+                            <li><a href="" class="usefull-link">Инвесторам</a></li>
+                        </ul>
+
+
+
+
+                        <ul class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
                             <li><a href="" class="usefull-link">О компании</a></li>
                             <li><a href="" class="usefull-link">Наши вакансии</a></li>
                             <li><a href="" class="usefull-link">Реклама на сайте</a></li>
@@ -320,32 +310,33 @@
                             <li><a href="" class="usefull-link">Партнерам</a></li>
                             <li><a href="" class="usefull-link">Инвесторам</a></li>
                         </ul>
-                    </div>
-                    <div class="footer__usefull-links__single-block">
-                        <div class="footer__usefull-links__single-block__white-help">
+
+
+                        <ul class=" footer__usefull-links__single-block footer__usefull-links__single-block__white-help footer__usefull-links__single-block__flex-order">
                             <svg class="footer__usefull-links__single-block__white-help-treugol" width="15px"
                                  height="15px" viewBox="0 0 2 2" preserveAspectRatio="none">
                                 <polygon fill="#FFF" points="1,0 2,2 0,2"/>
                             </svg>
-                            <img src="./img/interview.svg">
-                            <p>Вопросы и ответы</p>
-                            <a href="" class="question">Как создать резюме?</a>
-                            <a href="" class="question">Нaстройки видимости резюме</a>
-                            <a href="" class="question">Как правильно написать сопроводительное письмо</a>
-                            <a href="" class="question question__margin">Как происходит отклик на вакансию</a>
-                        </div>
-                        <span>© 2019–2020 Rabota.today.<br>
-                        Сайт поиска работы №1<br>
-                        в ДНР и ЛНР</span>
-                    </div>
-                </div>
+                            <li><img src="./img/interview.svg"></li>
+                            <li><p class="footer__usefull-links__single-block__white-help__p">Вопросы и ответы</p></li>
+                            <li><a href="" class="question">Как создать резюме?</a></li>
+                            <li><a href="" class="question">Нaстройки видимости резюме</a></li>
+                            <li><a href="" class="question">Как правильно написать сопроводительное письмо</a></li>
+                            <li class="question__margin"><a class="question" href="" >Как происходит отклик на вакансию</a></li>
+                              <span class="footer__usefull-links__span">© 2019–2020 Rabota.today.<br>
+                          Сайт поиска работы №1<br>
+                          в ДНР и ЛНР</span>
+                        </ul>
+
+
+
             </div>
         </div>
 
     </section>
 </div>
-
 <script src="js/jQuery%20v3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

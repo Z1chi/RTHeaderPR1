@@ -12,7 +12,10 @@ select {
 .select2-container .select2-selection--single{
     outline: none!important;
 }
-
+.single-vacancy:hover {
+    box-shadow: 0 0 20px -5px rgb(32 65 160);
+    transition: box-shadow 0.3s;
+}
 .content_advertising__single>*{
 margin-left: 12%;
 }

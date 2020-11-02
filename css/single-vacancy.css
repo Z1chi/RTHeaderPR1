@@ -7,95 +7,108 @@ section {
 .content-single {
     display: flex;
     justify-content: space-between;
-
 }
+
 .single-vacancy {
     border: 1px solid #acacac;
     display: flex;
-    margin: 0 30px 0 20%;
+    margin: 40px 30px 0 20%;
     align-items: center;
     width: auto;
     position: relative;
+    transition: box-shadow 0.3s;
 }
+
+
+
 .single-vacancy__info-views {
     display: inline-flex;
     align-items: center;
-
-
 }
-.single-vacancy__tegs  {
+
+.single-vacancy__tegs {
     cursor: pointer;
     width: 70%;
     margin-right: -100px;
 }
+
 .info-job__name-vacancy {
     color: #000000;
     font-family: MullerBold, sans-serif;
     font-size: 20px;
 }
-.single-vacancy__info-views >p {
+
+.single-vacancy__info-views > p {
     color: #636467;
     margin-right: 20px;
-    font-family: MullerRegular,sans-serif;
+    font-family: MullerRegular, sans-serif;
     font-size: 12px;
 }
-.single-vacancy__info-views >a{
-    font-family: MullerRegular,sans-serif;
+
+.single-vacancy__info-views > a {
+    font-family: MullerRegular, sans-serif;
     text-decoration: none;
     color: #636467;
     border: none;
     font-size: 12px;
 }
-.single-vacancy__info-views >svg {
+
+.single-vacancy__info-views > svg {
     margin-right: 5px;
     opacity: 0.4;
     color: #636467;
 
 }
+
 .single-vacancy__payment {
 
     color: #ff3b30;
-    font-family: MullerExtraBold,sans-serif;
+    font-family: MullerExtraBold, sans-serif;
     font-size: 18px;
 }
+
 .single-vacancy__payment-color {
     color: #0d1566;
 
-    font-family: MullerExtraBold,sans-serif;
+    font-family: MullerExtraBold, sans-serif;
     font-size: 18px;
 }
+
 .single-vacancy__block-left {
-    margin:20px 30px ;
+    margin: 20px 30px;
     flex-basis: 80%;
 }
 
-.single-vacancy__button-send-summary> p {
-    font-family: MullerMedium,sans-serif;
+.single-vacancy__button-send-summary > p {
+    font-family: MullerMedium, sans-serif;
     font-size: 14px;
     flex-wrap: wrap;
     white-space: nowrap;
     margin: auto 5px;
 }
+
 .single-vacancy__button-send-summary {
     display: flex;
     margin-bottom: 20px;
 }
-.single-vacancy__button-send-summary__ul_flex{
+
+.single-vacancy__button-send-summary__ul_flex {
     display: flex;
     flex-wrap: nowrap;
     margin: auto 0;
 }
 
 .single-vacancy__criterion {
-    font-family: MullerMedium,sans-serif ;
+    font-family: MullerMedium, sans-serif;
     font-size: 15px;
 }
+
 .single-vacancy__button-send-summary__ul_flex > li {
     list-style-type: none;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
-.single-vacancy__button-send-summary>button {
+.single-vacancy__button-send-summary > button {
     border-radius: 18px;
     background-color: #dd2629;
     height: 38px;
@@ -108,23 +121,29 @@ section {
     white-space: nowrap;
     margin: auto 45px auto 0;
     cursor: pointer;
-    transition: background-color 0.5s;.single-vacancy
+    transition: background-color 0.5s;
+. single-vacancy
 }
-.single-vacancy__button-send-summary>button:hover {
+
+.single-vacancy__button-send-summary > button:hover {
     background-color: #941515;
     transition: background-color 0.5s;
 }
+
 .single-vacancy__name-company {
     font-family: MullerRegular, sans-serif;
     color: #868686;
 }
+
 .single-vacancy__block_right {
     margin: 20px 30px 0 50px;
 }
-.single-vacancy__block_right>img {
+
+.single-vacancy__block_right > img {
     margin: 0 0 10px 35px;
 }
-.single-vacancy__block_right>button {
+
+.single-vacancy__block_right > button {
     border-radius: 18px;
     background-color: #dd2629;
     height: 38px;
@@ -138,24 +157,27 @@ section {
     margin: 0 auto;
     cursor: pointer;
     transition: background-color 0.5s;
-.single-vacancy: ;
+. single-vacancy:;
 }
-.single-vacancy__block_right>button:hover {
+
+.single-vacancy__block_right > button:hover {
     background-color: #941515;
     transition: background-color 0.5s;
 }
-.single-vacancy__img{
+
+.single-vacancy__img {
     position: absolute;
-    top: 0 ;
+    top: 0;
     right: 0;
-    z-index :-1;
+    z-index: -1;
 }
-.single-vacancy__tegs>.single-vacancy__tegs__style {
+
+.single-vacancy__tegs > .single-vacancy__tegs__style {
     color: #FFFFFF;
     display: inline-block;
-    font-family: MullerRegular,sans-serif;
+    font-family: MullerRegular, sans-serif;
     font-size: 12px;
-    border-radius:28px ;
+    border-radius: 28px;
     background: #aaaaaa;
     padding: 5px 10px;
     opacity: 0.5;
@@ -163,46 +185,53 @@ section {
     margin-bottom: 5px;
     transition: opacity 0.5s;
 }
-.single-vacancy__tegs>.single-vacancy__tegs__style:hover{
+
+.single-vacancy__tegs > .single-vacancy__tegs__style:hover {
     opacity: 1;
     transition: opacity 0.5s;
 }
+
 .single-vacancy__description {
-    font-family: MullerRegular ,sans-serif;
+    font-family: MullerRegular, sans-serif;
     color: #000000;
     font-size: 14px;
 }
-.single-vacancy__description >ul  {
+
+.single-vacancy__description > ul {
     list-style-type: none;
 }
-.single-vacancy__description >ul>li:before  {
-    content:  "—";
+
+.single-vacancy__description > ul > li:before {
+    content: "—";
     position: relative;
-    left:     -5px;
+    left: -5px;
 }
 
 .single-vacancy__description__header {
-    font-family: MullerBold,sans-serif;
+    font-family: MullerBold, sans-serif;
     font-size: 20px;
     margin: 20px 0;
 
 }
+
 .single-vacancy__description__header_color {
-    font-family: MullerBold,sans-serif;
+    font-family: MullerBold, sans-serif;
     font-size: 22px;
     color: #0d1566;
 
 }
-.single-vacancy__recommendation >p {
-    margin-left: 20% ;
+
+.single-vacancy__recommendation > p {
+    margin-left: 20%;
 }
 
 @media (max-width: 1365px) {
     .single-vacancy {
         margin: 0 10px;
     }
-    .single-vacancy__recommendation >p {
-        margin-left: 6% ;
+
+    .single-vacancy__recommendation > p {
+        margin-left: 6%;
     }
 }
 
@@ -210,21 +239,21 @@ section {
     .single-vacancy {
         flex-direction: column;
         align-items: flex-end;
-        position: relative;
     }
+
     .single-vacancy__block_right {
-        margin:0 10px 10px 0 ;
+        margin: 0 10px 10px 0;
     }
 
-    .single-vacancy__block-left
-    {
-        margin: 10px 5px 0 5px ;
+    .single-vacancy__block-left {
+        margin: 10px 5px 0 5px;
     }
 
-    .single-vacancy__info-views >p{
+    .single-vacancy__info-views > p {
         margin-right: 10px;
     }
-    .single-vacancy__block_right>img {
+
+    .single-vacancy__block_right > img {
         margin: 0 0 0 30%;
         position: absolute;
         z-index: -1;
@@ -233,6 +262,7 @@ section {
     }
 
 }
+
 @media (max-width: 826px) {
     .single-vacancy__button-send-summary__ul_flex {
         flex-wrap: nowrap;
@@ -244,8 +274,8 @@ section {
 
 @media (max-width: 728px) {
 
-    .single-vacancy__img{
-        top: 40px ;
+    .single-vacancy__img {
+        top: 40px;
     }
 
     .single-vacancy {
@@ -255,48 +285,54 @@ section {
         margin: 0 10px 0 5px;
     }
 
-    .single-vacancy>.single-vacancy__button-send-summary{
+    .single-vacancy > .single-vacancy__button-send-summary {
         margin: 10px auto;
     }
 
-    .single-vacancy__block-left
-    {
-        margin: 10px 5px 0 5px ;
+    .single-vacancy__block-left {
+        margin: 10px 5px 0 5px;
         flex-basis: 100%;
     }
+
     .single-vacancy__info-job__all {
         margin: -5px 0 5px 5px;
     }
-    .single-vacancy__info-views >p{
+
+    .single-vacancy__info-views > p {
         margin-right: 10px;
     }
 
-    .single-vacancy__button-send-summary>button {
-        margin: auto ;
+    .single-vacancy__button-send-summary > button {
+        margin: auto;
         width: 200px;
     }
 
 }
 
 @media (max-width: 550px) {
-    .single-vacancy__button-send-summary>button {
-        margin: 0 ;
+    .single-vacancy__button-send-summary > button {
+        margin: 0;
     }
+
     .single-vacancy__tegs {
         width: 100%;
         margin-right: 0;
     }
+
     .single-vacancy__img {
         display: none;
     }
+
     .single-vacancy__button-send-summary {
         margin-bottom: 0;
     }
-    .single-vacancy__button-send-summary >p{
+
+    .single-vacancy__button-send-summary > p {
         padding: 0;
         margin: 10px 0;
 
     }
+
     .single-vacancy__button-send-summary__ul_flex {
         padding: 0;
         margin: 0;
@@ -306,17 +342,19 @@ section {
     .single-vacancy__info-job > * {
         flex-direction: column;
     }
-    .single-vacancy__block_right>img {
-        display:  none;
+
+    .single-vacancy__block_right > img {
+        display: none;
     }
+
     .single-vacancy__info-views {
         flex-direction: row;
         margin: 5px auto;
     }
+
     .way > ul > li > a {
         white-space: normal;
     }
-
 
 
 }

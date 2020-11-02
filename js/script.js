@@ -36,7 +36,7 @@ $(document).ready(function () {
             $(navMenu).toggleClass('activeBtn');
             $('.jsNavMenu').toggleClass('active-nav');
             if ($('.jsNavOverlay').hasClass('active-filter-overlay')) {
-                $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
+                $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'block');
                 $('.jsNavMenu').removeClass('active-nav');
                 $('.jsShowMenu').removeClass('active-nav-drop');
                 let logo = $(this).find('.jsMenuLogo');
@@ -60,6 +60,9 @@ $(document).ready(function () {
             }
         });
     }
+
+
+
     if ($('.jsMenuPrev').length > 0) {
     $('.jsMenuPrev').click(function () {
         $('.jsNavMenu').toggleClass('active-nav');
@@ -71,7 +74,7 @@ $(document).ready(function () {
             $(navMenu).removeClass('activeBtn');
             $('.jsNavMenu').removeClass('active-nav');
             $('.jsShowMenu').removeClass('active-nav-drop');
-            $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'none');
+            $('.jsNavOverlay').removeClass('active-filter-overlay').css('display', 'block');
             let logo = $('.jsOpenNavMenu').find('.jsMenuLogo');
             let logoActive = $('.jsOpenNavMenu').find('.jsMenuLogoActive');
             setTimeout(function () {
@@ -128,6 +131,7 @@ $(document).ready(function () {
         $('.js-example-basic-single').select2({
             placeholder: 'Select an option',
             allowClear: !0,
+            minimumResultsForSearch: -1
         });
     }
     $('.select2-selection').css('border-radius','0px')
