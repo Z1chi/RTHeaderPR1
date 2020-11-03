@@ -301,7 +301,7 @@ body {
     position: absolute;
     top: -6px;
     left: -9px;
-    padding: 23px 93px;
+    padding: 23px 92px;
     border-radius: 50px;
     border: 1px solid #636467;
 }
@@ -525,7 +525,7 @@ body {
 
 }
 
-@media (max-width: 580px) {
+@media (max-width: 585px) {
     .header-wrap__button_menu {
         margin: 10px 0 0 4px;
     }

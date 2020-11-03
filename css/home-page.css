@@ -652,7 +652,7 @@ li {
         margin: 0 auto;
     }
     .footer_bacground {
-        height: calc(100% - 350px);
+        height: calc(100% - 310px);
     }
 }
 
