@@ -1,11 +1,22 @@
 *, *:focus, *:hover {
     outline: none;
 }
-
 body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+}
+button{
+    outline: none;
+    border: none;
+}
+input {
+    outline: none;
+}
+select {
+    outline: none;
+    text-decoration: none;
+    border: none;
 }
 section{
     margin: 25px 0 0 15px;
@@ -96,19 +107,7 @@ section{
 .single-vacancy__block_right{
     margin: 20px 30px 0 50px;
 }
-.single-vacancy__tegs>.single-vacancy__tegs__style {
-    color: #FFFFFF;
-    display: inline-block;
-    font-family: MullerRegular,sans-serif;
-    font-size: 12px;
-    border-radius:28px ;
-    background: #aaaaaa;
-    padding: 5px 10px;
-    opacity: 0.5;
-    white-space: nowrap;
-    margin-bottom: 5px;
-    transition: opacity 0.5s;
-}
+
 .single-vacancy__tegs>.single-vacancy__tegs__style:hover{
     opacity: 1;
     transition: opacity 0.5s;

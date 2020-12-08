@@ -12,11 +12,17 @@
     <link rel="stylesheet" href="css/all-vacancy.css">
     <link rel="stylesheet" href="css/global.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>
+    <!--<script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>-->
 
 
 </head>
 <body>
+<a style="position: absolute; top:20px; left: 20px; z-index: 1;" href="./all-vacancy.html">allVcncy</a>
+<a style="position: absolute; top:40px; left: 20px; z-index: 1;" href="./single-vacancy.html">singlVcncy</a>
+<a style="position: absolute; top:60px; left: 20px; z-index: 1;" href="./index.html">home</a>
+<a style="position: absolute; top:80px; left: 20px; z-index: 1;" href="./page-company.html">company</a>
+
+
 <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="container">
@@ -61,11 +67,11 @@
             <div class="searchCity">
                 <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
                        placeholder="Должность или компания">
-                <button class="searchCity__button_color"><i class="fa fa-search"></i></button>
+                <button class="searchCity__button_color"><img src="./img/search.svg" alt=""></button>
             </div>
 
             <!-- <div class="border">-->
-            <button class="border_before">Найти вакансии</button>
+            <a data-search="vacancy" class="border_before">Найти вакансии</a>
             <!-- </div>-->
         </form>
         <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>

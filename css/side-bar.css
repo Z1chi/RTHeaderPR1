@@ -59,8 +59,9 @@ body {
 .aside__side-bar__button__checkbox {
     position: relative;
     left: 0;
-
+    margin-top: 10px;
 }
+
 
 .aside__side-bar__button__checkbox > label {
     margin: 0 0 10px;
@@ -142,14 +143,14 @@ body {
 
 .checkbox__text {
     position: relative;
-    padding: 0 0 0 30px;
+    padding: 3px 0 0 30px;
     cursor: pointer;
 }
 
 .checkbox__text:before {
     content: '';
     position: absolute;
-    top: -4px;
+    top: 0;
     left: 0;
     width: 15px;
     height: 15px;
@@ -161,7 +162,7 @@ body {
 .checkbox__text:after {
     content: '';
     position: absolute;
-    top: -4px;
+    top: 0;
     left: 0;
     width: 13px;
     height: 13px;
@@ -234,6 +235,9 @@ body {
 @media (max-width: 1365px) {
     .svgRelative {
         margin: 0 0 0 30px;
+    }
+    .aside__side-bar__button__checkbox{
+        margin-left: 10px  ;
     }
 
 }

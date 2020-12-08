@@ -1,0 +1,526 @@
+.button-cover * {
+  font-family: MullerMedium, sans-serif;
+  font-size: 15px;
+
+}
+
+.button-cover {
+  border: 1px solid #30408d;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.button {
+  position: relative;
+  width: 280px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Button 10 */
+#button-10 .knobs:before, #button-10 .knobs:after, #button-10 .knobs span {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 9px;
+  transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+  content: '';
+  left: 0;
+  background-color: #30408d;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+#button-10 .knobs:after {
+  content: 'Работодатель';
+  right: 0;
+  color: #d43a30;
+}
+
+#button-10 .knobs span {
+  display: inline-block;
+  left: 0;
+  color: #fff;
+  z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+  color: #d43a30;
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+  left: 140px;
+  background-color: #30408d;
+  color: #fff;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+  color: #fff;
+}
+
+.search {
+  background-image: url("../img/header_1versiya.png");
+  background-color: #0228a3;
+  border-radius: 0 33px 0 0;
+  height: 170px;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.background__pointer_right {
+  position: absolute;
+  right: 100px;
+  top: 130px;
+  z-index: -1;
+}
+
+.background__pointer_left {
+  position: absolute;
+  top: 78px;
+  z-index: -1;
+}
+
+.background__after_search {
+  position: relative;
+  left: -70px;
+  top: -11px;
+  background-image: url("../img/форма_заявки.png");
+  width: calc(100% + 100px);
+  height: 120px;
+  border-radius: 0 0 33px 0;
+  z-index: -1;
+  box-shadow: -9px 10px 29px 6px rgba(105, 105, 105, 0.24);
+}
+
+.svgRelative > p {
+  margin: 50px 0 0 0;
+}
+
+.svgRelative {
+  position: relative;
+  white-space: nowrap;
+  font-family: MullerBold, sans-serif;
+  font-size: 51px;
+  color: #FFF;
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+}
+
+.svgRelative__sup_position {
+  position: relative;
+  font-size: 16px;
+}
+
+.svgRelative__sup_position > svg {
+  color: #dd3d34;
+  position: absolute;
+  z-index: -1;
+  left: -48px;
+  top: -27px;
+}
+
+.iconChair {
+  position: absolute;
+  top: 60px;
+  left: 1%;
+  z-index: 0;
+}
+
+/* Блок хедера конец */
+/* Блок контента начало */
+
+
+.content {
+  padding: 70px 0 0 0;
+  max-width: 1280px;
+  margin: 0 auto 50px;
+}
+
+.way {
+  margin: 50px 0 0 5px;
+}
+
+.content-wrapper {
+  display: flex;
+  margin: 0 10px;
+}
+
+section {
+  flex-basis: 70%;
+}
+
+.section__singleCompany {
+
+  border: 1px solid #acacac;
+  transition: box-shadow 0.3s
+
+}
+
+.section__singleCompany >h2 {
+  white-space: nowrap;
+
+}
+.section__singleCompany >h2 > img {
+  position: relative;
+  top: 5px;
+}
+
+.singleCompany__head {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-family: MullerMedium, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.singleCompany__head > * svg {
+  position: relative;
+  top: 2px;
+  margin: 0 5px;
+}
+
+.section__singleCompany {
+  font-family: MullerMedium, sans-serif;
+  font-size: 18px;
+}
+
+.section__singleCompany > * {
+  margin: 15px 30px;
+}
+
+.typeOfWork {
+  font-family: MullerMedium, sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.middle-content__company {
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center;*/
+}
+
+.middle-content__company > h2 {
+  font-size: 18px;
+}
+
+.middle-content__company__number {
+  border-left: 4px solid #fb553e;
+  border-radius: 2px;
+  padding: 0 10px 0;
+  height: 35px;
+  font-size: 14px;
+}
+
+.middle-content__company__number > span {
+  font-family: MullerExtraBold, sans-serif;
+  font-size: 23px;
+  color: #0d1566;
+
+}
+
+.middle-content__company__acceptJob {
+  text-align: center;
+  font-size: 12px;
+}
+
+.button_accept_job {
+  padding: 14px 38px;
+  text-align: center;
+  position: relative;
+  border-radius: 18px;
+  background-color: #dd3d34;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: MullerBold, sans-serif;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: background-color 0.5s;
+  height: 20px;
+  min-width: 195px;
+  margin-top: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.button_accept_job:hover {
+  background-color: #941515;
+  transition: background-color 0.5s;
+}
+
+.middle-content__company__acceptJob > p {
+  margin: 20px 0 0;
+}
+
+.section__singleCompany__description {
+  font-size: 13px;
+  max-width: 80%;
+}
+
+.section__singleCompany__border {
+  border-top: 1px solid #fee0dc;
+  border-radius: 2px;
+}
+
+.section__singleCompany__margin {
+  margin-top: 35px;
+  font-family: MullerBold, sans-serif;
+}
+
+
+/* Блок вакансий слайдера начало */
+
+.slider {
+  height: 375px;
+  padding: 15px 20px 15px 0 !important;
+}
+
+.content_vacancy {
+  flex-basis: 30%;
+}
+
+.content_vacancy__title {
+text-align: center;
+  font-family: MullerBold, sans-serif;
+  font-size: 20px;
+}
+
+.vacancyCompany__title {
+  display: flex;
+  margin: 20px 5px;
+  justify-content: space-around;
+}
+
+.vacancyCompany__title_text {
+  display: flex;
+  flex-direction: column;
+
+}
+.vacancyCompany__title_img {
+  height: 40px ;
+  width: 110px;
+}
+
+.vacancyCompany__title_text > p {
+  margin: 5px 0;
+  font-family: MullerBold, sans-serif;
+  font-size: 13px;
+}
+
+.vacancyCompany {
+  display: flex;
+  max-width: 480px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  margin: auto 10px;
+}
+
+.vacancyCompany__kard {
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  max-height: 175px;
+  min-width: 300px;
+}
+
+.vacancyCompany-treugol {
+  position: absolute;
+  top: -15px;
+  left: 25px;
+}
+
+.vacancyCompany__description {
+  margin: 20px;
+  font-family: MullerRegular, sans-serif;
+  font-size: 13px;
+  color: #2a2a2a;
+}
+
+
+/* Блок контента конец */
+
+
+/* Шар внизу страницы */
+div#imgRed {
+  width: 350px;
+  position: absolute;
+  height: 350px;
+  background-color: #dd3d34;
+  border-radius: 0 100% 0 0 / 100% 100% 0 0;
+}
+
+.background__pointer_bottom {
+  position: relative;
+  z-index: -1;
+  left: 150px;
+  top: -40px;
+}
+
+/* Шар внизу страницы конец */
+
+
+@media (max-width: 1500px) {
+  .iconChair {
+    display: none;
+  }
+}
+
+@media (max-width: 1365px) {
+
+  .background__pointer_right {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    z-index: -1;
+  }
+
+
+  .background__pointer_left {
+    position: absolute;
+    top: 78px;
+    z-index: -1;
+  }
+
+
+  .background__after_search {
+    width: calc(100% + 70px);
+  }
+
+
+  .navigation {
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .nav-logo > a {
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+
+  .nav-logo {
+    margin: 240px 0 30px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-pa {
+    flex-direction: column;
+    margin: 120px 0 0 20px;
+    align-items: flex-start;
+  }
+
+  .nav-pa > .mobile__font-size {
+    font-size: 25px;
+    color: #FFFFFF;
+  }
+
+}
+
+@media (max-width: 1103px) {
+  .header-wrap {
+    height: 105px !important;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .content_vacancy {
+    margin: 0 auto;
+  }
+
+  .slider {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1030px) {
+
+  .svgRelative {
+    font-size: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .section__singleCompany >h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .middle-content__company {
+    flex-direction: column;
+  }
+  .middle-content__company__number {
+    margin: 25px auto 40px
+  }
+  .section__singleCompany >h2 {
+    font-size: 18px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 550px) {
+  .background__pointer_right {
+    top: 165px;
+  }
+
+  .svgRelative__sup_position {
+    font-size: 10px;
+  }
+
+  .svgRelative {
+    font-size: 14px;
+    margin-left: 60px;
+  }
+
+  .singleCompany__head {
+    flex-direction: column;
+    letter-spacing: 1px;
+  }
+  #imgRed {
+    left: -150px;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  .section__singleCompany > h2 {
+    font-size: 14px;
+  }
+  .slider {
+    height: 450px;
+
+  }
+
+  .vacancyCompany__kard {
+    min-width: auto;
+    max-height: 400px;
+  }
+
+}

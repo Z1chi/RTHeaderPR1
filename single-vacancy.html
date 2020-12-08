@@ -1,168 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Single-vacancy</title>
-    <link rel="stylesheet" href="css/header.css" type="text/css">
-    <link rel="stylesheet" href="font/font.css" type="text/css">
-    <link rel="stylesheet" href="css/single-vacancy.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Single-vacancy</title>
+  <link rel="stylesheet" href="css/header.css" type="text/css">
+  <link rel="stylesheet" href="font/font.css" type="text/css">
+  <link rel="stylesheet" href="css/single-vacancy.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
+  <!-- <script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>-->
 
 
 </head>
 <body>
+<a style="position: absolute; top:20px; left: 20px; z-index: 1;" href="./all-vacancy.html">allVcncy</a>
+<a style="position: absolute; top:40px; left: 20px; z-index: 1;" href="./single-vacancy.html">singlVcncy</a>
+<a style="position: absolute; top:60px; left: 20px; z-index: 1;" href="./index.html">home</a>
+<a style="position: absolute; top:80px; left: 20px; z-index: 1;" href="./page-company.html">company</a>
+
 <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
 
 <div class="container">
-    <header class="header-wrap">
-        <div class="jsOpenNavMenu header-wrap__button_menu">
-            <img class="jsMenuLogo " src="./img/grid.png"  height="34" width="34"/>
-            <img class="jsMenuLogoActive btn-active" src="./img/grid_active.png"  height="34" width="34"/>
-        </div>
-        <div class="filter-overlay nav-overlay jsNavOverlay" style="display: block;"></div>
-        <nav class="nav-logo">
-            <a class="" href="">
-                <img src="./img/logo-main_(2).jpg" alt="logo"></a>
-            <a href="">Россия</a>
-        </nav>
-        <div class="jsNavMenu header-wrap__navParent">
-            <nav class="navigation">
-                <a class="navigation_active" href="">Вакансии</a>
-                <a class="" href="">Резюме</a>
-                <a class="" href="">Компании</a>
-                <a class="" href="">Работодателю</a>
-                <div><a class=" menu_logo-visible"><img src="./img/logo-main_(3).png" height="44" width="237"/></a></div>
-            </nav>
-        </div>
-        <nav class="nav-pa">
-            <a href="">Вход</a>
-            <a href="">Регистрация</a>
-            <a class="abstract" href="">Добавить Резюме</a>
-        </nav>
-    </header>
-    <div class="search">
-        <form class="formSearch">
-        <!--    <div class="searchCity">-->
-                <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
-                <label  class="formSearch__select">
-                    <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
-                    <option value="dnr">ДНР</option>
-                    <option value="lnr">ЛНР</option>
-                </select>
-                </label>
-                <!--<button><i class="fa fa-times"></i></button>-->
-            <!--</div>-->
-            <div class="searchCity">
-                <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
-                       placeholder="Должность или компания">
-                <button class="searchCity__button_color"><i class="fa fa-search"></i></button>
-            </div>
-
-           <!-- <div class="border">-->
-                <button class="border_before">Найти вакансии</button>
-           <!-- </div>-->
-        </form>
-        <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>
+  <header class="header-wrap">
+    <div class="jsOpenNavMenu header-wrap__button_menu">
+      <img class="jsMenuLogo " src="./img/grid.png" height="34" width="34"/>
+      <img class="jsMenuLogoActive btn-active" src="./img/grid_active.png" height="34" width="34"/>
     </div>
+    <div class="filter-overlay nav-overlay jsNavOverlay" style="display: block;"></div>
+    <nav class="nav-logo">
+      <a class="" href="">
+        <img src="./img/logo-main_(2).jpg" alt="logo"></a>
+      <a href="">Россия</a>
+    </nav>
+    <div class="jsNavMenu header-wrap__navParent">
+      <nav class="navigation">
+        <a class="navigation_active" href="">Вакансии</a>
+        <a class="" href="">Резюме</a>
+        <a class="" href="">Компании</a>
+        <a class="" href="">Работодателю</a>
+        <div><a class=" menu_logo-visible"><img src="./img/logo-main_(3).png" height="44" width="237"/></a>
+        </div>
+      </nav>
+    </div>
+    <nav class="nav-pa">
+      <a href="">Вход</a>
+      <a href="">Регистрация</a>
+      <a class="abstract" href="">Добавить Резюме</a>
+    </nav>
+  </header>
+  <div class="search">
+    <form class="formSearch">
+      <!--    <div class="searchCity">-->
+      <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
+      <label class="formSearch__select">
+        <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
+          <option value="dnr">ДНР</option>
+          <option value="lnr">ЛНР</option>
+        </select>
+      </label>
+      <!--<button><i class="fa fa-times"></i></button>-->
+      <!--</div>-->
+      <div class="searchCity">
+        <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
+               placeholder="Должность или компания">
+        <button class="searchCity__button_color"><img src="./img/search.svg" alt=""></button>
+      </div>
+
+      <!-- <div class="border">-->
+      <a data-search="vacancy" class="border_before">Найти вакансии</a>
+      <!-- </div>-->
+    </form>
+    <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>
+  </div>
 </div>
 <div class="jsFilterOverlay filter-overlay"></div>
 <div class="container">
-    <div class="way">
-        <ul>
-            <li class="way__link"><a href=""><span>Работа в Таганроге</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+  <div class="way">
+    <ul>
+      <li class="way__link"><a href=""><span>Работа в Таганроге</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии в Таганроге</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии в Таганроге</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии менеджера по работе с клиентами</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии менеджера по работе с клиентами</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Менеджер по работе с клиентами</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Менеджер по работе с клиентами</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии в Москве</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии в Москве</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-        </ul>
-    </div>
-    <div class="content-single">
-        <section>
-            <div class="single-vacancy">
-                <div class="single-vacancy__block-left">
-                    <div class="single-vacancy__tegs">
-                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
-                        <a class="single-vacancy__tegs__style">Строительство архитектура</a>
-                        <a class="single-vacancy__tegs__style">Строительство архитектура</a>
-                    </div>
-                    <div class="single-vacancy__info-views single-vacancy__info-job__all">
-                        <p>Добавлено: 13.10.2020</p>
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 488.85 488.85" width="15px" height="15px"
-                             style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+      </a>
+      </li>
+    </ul>
+  </div>
+  <div class="content-single">
+    <section>
+      <div class="single-vacancy">
+        <div class="single-vacancy__block-left">
+          <div class="single-vacancy__tegs">
+            <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+            <a class="single-vacancy__tegs__style">Строительство архитектура</a>
+            <a class="single-vacancy__tegs__style">Строительство архитектура</a>
+          </div>
+          <div class="single-vacancy__info-views single-vacancy__info-job__all">
+            <p>Добавлено: 13.10.2020</p>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 488.85 488.85" width="15px" height="15px"
+                 style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
 <g>
 	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
 		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
@@ -171,11 +176,11 @@
 		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
 </g>
 </svg>
-                        <p>49</p>
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 477.883 477.883" width="15px" height="15px"
-                             style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+            <p>49</p>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 477.883 477.883" width="15px" height="15px"
+                 style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
 <g>
 	<g>
 		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
@@ -185,15 +190,15 @@
 	</g>
 </g>
 </svg>
-                        <a href="">Донецк</a></div>
-                    <div class="single-vacancy__info-job single-vacancy__info-job__all">
-                        <p class="info-job__name-vacancy">Менеджер по продажам (холодные звонки)</p>
-                        <p class="single-vacancy__payment-color"> ОТ 47 000 до 69 000 ₽</p>
-                        <p class="single-vacancy__criterion">Требуемый опыт работы: 1–3 года Полная занятость, полный
-                            день</p>
-                        <div class="single-vacancy__button-send-summary">
-                            <button>ОТПРАВИТЬ РЕЗЮМЕ</button>
-                            <p>Написать соискателю в сетях <span>
+            <a href="">Донецк</a></div>
+          <div class="single-vacancy__info-job single-vacancy__info-job__all">
+            <p class="info-job__name-vacancy">Менеджер по продажам (холодные звонки)</p>
+            <p class="single-vacancy__payment-color"> ОТ 47 000 до 69 000 ₽</p>
+            <p class="single-vacancy__criterion">Требуемый опыт работы: 1–3 года Полная занятость, полный
+              день</p>
+            <div class="single-vacancy__button-send-summary">
+              <button>ОТПРАВИТЬ РЕЗЮМЕ</button>
+              <p>Написать соискателю в сетях <span>
                             <ul class="single-vacancy__button-send-summary__ul_flex">
                             <li>
                                 <a href="">
@@ -267,73 +272,74 @@
                             </li>
                             </ul>
                         </span></p>
-                        </div>
-                        <div class="single-vacancy__description">
-                            <span class="single-vacancy__description__header single-vacancy__description__header_color">Описание вакансии</span>
-
-                            <p>Bernas Company приглашает целеустремленных и активных людей на должность менеджера по
-                                продажам
-                                Занимаемся продажей рекламных мест в поисковых системах
-                                Яндекс и Гугл. Наш сайт: ppp24.ru</p>
-
-                            <span class="single-vacancy__description__header">Требования:</span>
-                            <ul>
-                                <li>Возраст: от 22 — 35 лет.</li>
-
-                                <li>Грамотная речь, четкая дикция.</li>
-
-                                <li>Знание ПК, Интернет, почта.</li>
-
-                                <li>Приветствуется опыт работы в телефонных продажах.</li>
-
-                                <li>Желание активно работать и хорошо зарабатывать</li>
-
-                                <li>Желание развиваться в профессиональном плане.</li>
-                            </ul>
-
-
-                            <span class="single-vacancy__description__header">Обязанности: </span>
-
-                            <p>Поиск клиентов в интернете и добавление их в свою базу.
-                                Исходящие звонки клиентам (холодные звонки, IP телефония)
-                                Работа по скрипту (Знакомство-Презентация-Заключение договора-Оплата)
-                                Соблюдение стандартов компании — за это выплачивается дополнительный бонус.</p>
-
-                            <span class="single-vacancy__description__header">Условия работы:</span>
-
-                            <p>Работа в офисе (офис в районе АС Центр — удобное расположение).
-                                Заработная плата — ставка от 11 000 рублей до 40 000 руб. Ставка зависит от объема
-                                продаж.
-                                Выплата дохода — 2 раза в месяц.
-                                Предусмотрена 13-я зарплата.
-                                График работы: пн-пт, с 08:00—16:00, сб-вс выходной.
-                                Дружный молодой коллектив.</p>
-                        </div>
-                    </div>
-                    <div class="single-vacancy__img">
-                        <img src="./img/Слой_9.png" alt="logo-globus">
-
-                    </div>
-                </div>
             </div>
-            <div class="single-vacancy__recommendation">
-                <p class="single-vacancy__description__header">Похожие вакансии</p>
-                <div class="single-vacancy">
-                    <div class="single-vacancy__block-left">
-                        <div class="single-vacancy__tegs">
-                            <a class="single-vacancy__tegs__style">Розничная торговля</a>
-                            <a class="single-vacancy__tegs__style">Рабочие специальности</a>
-                            <a class="single-vacancy__tegs__style">Транспорт, авто</a>
-                        </div>
-                        <div class="single-vacancy__info-job">
-                            <p class="info-job__name-vacancy">Заправщик-Продавец на АЗС</p>
-                            <p class="single-vacancy__name-company">ООО АНКОР</p>
-                            <div class="single-vacancy__info-views">
-                                <p>Добавлено: 12.10.2020</p>
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 488.85 488.85" width="15px" height="15px"
-                                     style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+            <div class="single-vacancy__description">
+       <span
+         class="single-vacancy__description__header single-vacancy__description__header_color">Описание вакансии</span>
+
+              <p>Bernas Company приглашает целеустремленных и активных людей на должность менеджера по
+                продажам
+                Занимаемся продажей рекламных мест в поисковых системах
+                Яндекс и Гугл. Наш сайт: ppp24.ru</p>
+
+              <span class="single-vacancy__description__header">Требования:</span>
+              <ul>
+                <li>Возраст: от 22 — 35 лет.</li>
+
+                <li>Грамотная речь, четкая дикция.</li>
+
+                <li>Знание ПК, Интернет, почта.</li>
+
+                <li>Приветствуется опыт работы в телефонных продажах.</li>
+
+                <li>Желание активно работать и хорошо зарабатывать</li>
+
+                <li>Желание развиваться в профессиональном плане.</li>
+              </ul>
+
+
+              <span class="single-vacancy__description__header">Обязанности: </span>
+
+              <p>Поиск клиентов в интернете и добавление их в свою базу.
+                Исходящие звонки клиентам (холодные звонки, IP телефония)
+                Работа по скрипту (Знакомство-Презентация-Заключение договора-Оплата)
+                Соблюдение стандартов компании — за это выплачивается дополнительный бонус.</p>
+
+              <span class="single-vacancy__description__header">Условия работы:</span>
+
+              <p>Работа в офисе (офис в районе АС Центр — удобное расположение).
+                Заработная плата — ставка от 11 000 рублей до 40 000 руб. Ставка зависит от объема
+                продаж.
+                Выплата дохода — 2 раза в месяц.
+                Предусмотрена 13-я зарплата.
+                График работы: пн-пт, с 08:00—16:00, сб-вс выходной.
+                Дружный молодой коллектив.</p>
+            </div>
+          </div>
+          <div class="single-vacancy__img">
+            <img src="./img/Слой_9.png" alt="logo-globus">
+
+          </div>
+        </div>
+      </div>
+      <div class="single-vacancy__recommendation">
+        <p class="single-vacancy__description__header">Похожие вакансии</p>
+        <div class="single-vacancy">
+          <div class="single-vacancy__block-left">
+            <div class="single-vacancy__tegs">
+              <a class="single-vacancy__tegs__style">Розничная торговля</a>
+              <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+              <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+            </div>
+            <div class="single-vacancy__info-job">
+              <p class="info-job__name-vacancy">Заправщик-Продавец на АЗС</p>
+              <p class="single-vacancy__name-company">ООО АНКОР</p>
+              <div class="single-vacancy__info-views">
+                <p>Добавлено: 12.10.2020</p>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 488.85 488.85" width="15px" height="15px"
+                     style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
 <g>
 	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
 		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
@@ -342,11 +348,11 @@
 		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
 </g>
 </svg>
-                                <p>12</p>
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 477.883 477.883" width="15px" height="15px"
-                                     style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+                <p>12</p>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 477.883 477.883" width="15px" height="15px"
+                     style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
 <g>
 	<g>
 		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
@@ -356,54 +362,54 @@
 	</g>
 </g>
 </svg>
-                                <a href="">Донецк</a></div>
-                            <p class="single-vacancy__payment"> ОТ 400 ₽</p>
-                            <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit.
-                                Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus
-                                nam
-                                nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
-                        </div>
-                    </div>
-                    <div class="single-vacancy__block_right">
-                        <img src="./img/Слой_9.png" alt="logo-globus">
-                        <button>Посмотреть полностью</button>
-                    </div>
-                </div>
+                <a href="">Донецк</a></div>
+              <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+              <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+                Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus
+                nam
+                nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
             </div>
-        </section>
-        <div class="content_vacancy">
-            <div class="content_advertising__single">
-                <img src="./img/YandexTaxi.png">
-                <div class="content_advertising__single__text">
+          </div>
+          <div class="single-vacancy__block_right">
+            <img src="./img/Слой_9.png" alt="logo-globus">
+            <button>Посмотреть полностью</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="content_vacancy">
+      <div class="content_advertising__single">
+        <img src="./img/YandexTaxi.png">
+        <div class="content_advertising__single__text">
 
-                    <p class="advert__name-company">ООО «Центр найма водителей»</p>
-                    <p class="advert__style_font">Сферы деятельности</p>
-                    <p class="advert__style_font-light">
-                        Розничная торговля
-                        Товары народного потребления
-                    </p>
-                </div>
-                <button>ПОКАЗАТЬ КОНТАКТЫ</button>
-                <p>Вакансия опубликована 16 января 2019 в Донецке</p>
-            </div>
-            <div class="content_advertising__single advert__moloko ">
+          <p class="advert__name-company">ООО «Центр найма водителей»</p>
+          <p class="advert__style_font">Сферы деятельности</p>
+          <p class="advert__style_font-light">
+            Розничная торговля
+            Товары народного потребления
+          </p>
+        </div>
+        <button>ПОКАЗАТЬ КОНТАКТЫ</button>
+        <p>Вакансия опубликована 16 января 2019 в Донецке</p>
+      </div>
+      <div class="content_advertising__single advert__moloko ">
 
-                <div class="content_advertising__single__text">
+        <div class="content_advertising__single__text">
 
-                    <p class="advert__name-company">Самые актуальные
-                        вакансии фирменных
-                        магазинов “МОЛОКО”</p>
-                    <img src="./img/Moloko_logo.png">
-                    <img src="./img/moloko.png">
-
-                </div>
-                <button>Показать <span>8</span> вакансий</button>
-
-            </div>
+          <p class="advert__name-company">Самые актуальные
+            вакансии фирменных
+            магазинов “МОЛОКО”</p>
+          <img src="./img/Moloko_logo.png">
+          <img src="./img/moloko.png">
 
         </div>
+        <button>Показать <span>8</span> вакансий</button>
+
+      </div>
+
     </div>
+  </div>
 </div>
 <script src="js/jQuery%20v3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
