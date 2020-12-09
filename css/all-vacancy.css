@@ -108,6 +108,20 @@ section{
     margin: 20px 30px 0 50px;
 }
 
+.single-vacancy__tegs > .single-vacancy__tegs__style {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: MullerRegular, sans-serif;
+  font-size: 12px;
+  border-radius: 28px;
+  background: #aaaaaa;
+  padding: 5px 10px;
+  opacity: 0.5;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  transition: opacity 0.5s;
+}
+
 .single-vacancy__tegs>.single-vacancy__tegs__style:hover{
     opacity: 1;
     transition: opacity 0.5s;
@@ -154,7 +168,7 @@ section{
     }
 
 }
-@media (max-width: 550px) {
+@media (max-width: 620px) {
 
     .single-vacancy {
         margin: 0 10px 10px -10px;

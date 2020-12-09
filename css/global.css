@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
+  position: relative;
+  height: 100vh;
 }
 
 button {
@@ -24,13 +26,88 @@ select {
   outline: none !important;
 }
 
-
+.container {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
 
 .btn-active {
   display: none;
 }
 
+/* Шар внизу страницы */
+div#imgRed {
+/*  width: 350px;
+  position: absolute;
+  height: 350px;
+  background-color: #dd3d34;
+  !*  border-radius: 0 100% 0 0 / 100% 100% 0 0;*!
+  border-radius: 50%;
+  bottom: -60%;
+  z-index: -1;
+  left: 5%;
+  transform: translateX(-50%);*/
 
+}
+
+.background__content {
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+/*  bottom: -100px;*/
+}
+
+
+/*.background__content>div img {
+  z-index: -2;
+  position: absolute;
+  display: block;
+  width: 260px;
+  height: 260px;
+}*/
+
+.background__content > div:before {
+/*  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 545px;
+  height: 545px;
+  border-radius: 50%;
+  background-color: #dd3d34*/
+}
+
+.background-top {
+
+}
+
+.background-bottom {
+  position: absolute;
+  bottom: -90%;
+  left: -350px;
+}
+.background-bottom > img {
+
+}
+
+.background__pointer_bottom {
+
+}
+
+.footer {
+  bottom: 0;
+  position: relative;
+  margin-top: -250px;
+  z-index: -1;
+}
+
+/* Шар внизу страницы конец */
 
 @media screen and (max-width: 1096px) {
 
@@ -50,6 +127,11 @@ select {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .background__content {
+    display: none;
+  }
+}
 @media screen and (max-width: 583px) {
   .content_vacancy {
     flex-direction: column;
@@ -60,7 +142,10 @@ select {
 
   .content_advertising__single {
     margin: 5px auto;
+  }
 
+  #imgRed {
+    left: -150px;
   }
 
 }

@@ -709,6 +709,7 @@ li {
   .footer__usefull-links__single-block__flex-order {
     order: -1;
     width: calc(40% + -25px);
+    margin-right: 5vw;
   }
 
   .footer__usefull-links__span {
@@ -794,7 +795,7 @@ li {
   }
 
   .svgRelative {
-    font-size: 14px;
+    font-size: 19px;
     margin-left: 60px;
   }
 

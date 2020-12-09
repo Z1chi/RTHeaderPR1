@@ -32,7 +32,7 @@ section {
 .single-vacancy {
   border: 1px solid #acacac;
   display: flex;
-  margin: 40px 30px 0 20%;
+  margin: 20px 30px 0 20%;
   align-items: center;
   width: auto;
   position: relative;
@@ -45,10 +45,6 @@ section {
   outline: none !important;
 }
 
-.single-vacancy:hover {
-  box-shadow: 0 0 20px -5px rgb(32 65 160);
-  transition: box-shadow 0.3s;
-}
 
 .content_advertising__single > * {
   margin-left: 12%;
@@ -91,10 +87,12 @@ section {
 }
 
 
+/*
 .single-vacancy:hover {
   box-shadow: 0 0 20px -5px rgb(32 65 160);
   transition: box-shadow 0.3s;
 }
+*/
 
 .content_advertising__single > * {
   margin-left: 12%;
@@ -210,7 +208,7 @@ section {
   color: #0d1566;
 
   font-family: MullerExtraBold, sans-serif;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .single-vacancy__block-left {
@@ -248,20 +246,19 @@ section {
 }
 
 .single-vacancy__button-send-summary > button {
-  border-radius: 18px;
+  border-radius: 50px;
   background-color: #dd2629;
-  height: 38px;
-  padding: 10px 20px;
+  line-height: 40px;
+  padding: 0 20px;
   text-decoration: none;
-  font-size: 12px;
-  font-family: MullerRegular, sans-serif;
+  font-size: 11px;
+  font-family: MullerExtraBold, sans-serif;
   color: #ffffff;
   border: none;
   white-space: nowrap;
   margin: auto 45px auto 0;
   cursor: pointer;
   transition: background-color 0.5s;
-. single-vacancy
 }
 
 .single-vacancy__button-send-summary > button:hover {
@@ -306,8 +303,8 @@ section {
 
 .single-vacancy__img {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 25px;
   z-index: -1;
 }
 
@@ -336,8 +333,19 @@ section {
   font-size: 14px;
 }
 
+
+.single-vacancy__description > p {
+  margin: 15px -75px 15px 0;
+}
+
 .single-vacancy__description > ul {
   list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.single-vacancy__description > ul > li {
+  margin: 15px 0;
 }
 
 .single-vacancy__description > ul > li:before {
@@ -366,7 +374,7 @@ section {
 
 @media (max-width: 1365px) {
   .single-vacancy {
-    margin: 0 10px;
+    margin: 20px 10px;
   }
 
   .single-vacancy__recommendation > p {
@@ -384,10 +392,9 @@ section {
     margin: 0 10px 10px 0;
   }
 
-  .single-vacancy__block-left {
-    margin: 10px 5px 0 5px;
-  }
-
+  /*  .single-vacancy__block-left {
+      margin: 10px 5px 0 5px;
+    }*/
   .single-vacancy__info-views > p {
     margin-right: 10px;
   }
@@ -412,6 +419,10 @@ section {
 
   .content-single {
     flex-direction: column;
+  }
+
+  .single-vacancy__description > p {
+    margin: 15px 0;
   }
 }
 
@@ -442,12 +453,12 @@ section {
   }
 
   .single-vacancy__block-left {
-    margin: 10px 5px 0 5px;
+    margin: 10px 10px 0 10px;
     flex-basis: 100%;
   }
 
   .single-vacancy__info-job__all {
-    margin: -5px 0 5px 5px;
+    margin: -5px 10px 10px 10px;
   }
 
   .single-vacancy__info-views > p {
@@ -474,13 +485,38 @@ section {
 
   }
 
+  .single-vacancy__info-job > * {
+    flex-direction: column;
+  }
+  .single-vacancy__info-views {
+    flex-direction: row;
+  }
+
+  .single-vacancy__info-job {
+    margin: 10px;
+  }
+
+  .single-vacancy__button-send-summary {
+    margin-bottom: 0;
+  }
+
+  .single-vacancy__button-send-summary > p {
+    padding: 0;
+    margin: 10px auto;
+
+  }
+
+  .single-vacancy__button-send-summary__ul_flex {
+    padding: 0;
+    margin: auto;
+  }
+
 }
 
 @media (max-width: 550px) {
-  .single-vacancy__button-send-summary > button {
-    margin: 0;
-  }
-
+  /* .single-vacancy__button-send-summary > button {
+     margin: 0;
+   }*/
   .single-vacancy__tegs {
     width: 100%;
     margin-right: 0;
@@ -490,25 +526,6 @@ section {
     display: none;
   }
 
-  .single-vacancy__button-send-summary {
-    margin-bottom: 0;
-  }
-
-  .single-vacancy__button-send-summary > p {
-    padding: 0;
-    margin: 10px 0;
-
-  }
-
-  .single-vacancy__button-send-summary__ul_flex {
-    padding: 0;
-    margin: 0;
-  }
-
-
-  .single-vacancy__info-job > * {
-    flex-direction: column;
-  }
 
   .single-vacancy__block_right > img {
     display: none;
@@ -516,7 +533,7 @@ section {
 
   .single-vacancy__info-views {
     flex-direction: row;
-    margin: 5px auto;
+    margin: 5px 10px;
   }
 
   .way > ul > li > a {
