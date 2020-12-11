@@ -111,6 +111,7 @@ body {
   position: relative;
   z-index: 5;
   max-width: 1838px;
+
 }
 
 .searchCity {
@@ -176,7 +177,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 15px 20px;
 }
 
 .searchCity > button {
@@ -253,7 +254,7 @@ body {
 }
 
 .way {
-  margin: 20px 0 0 15.5%;
+  margin: 20px 0 0 13.7%;
 }
 
 .way > * {
@@ -538,7 +539,7 @@ body {
 
 
   .way {
-    margin-left: 25px;
+    margin-left: 5px;
   }
 }
 
@@ -676,7 +677,7 @@ body {
 
   .search-p {
     font-size: 14px;
-    padding: 5px 0 0;
+    padding: 20px 0 0;
     margin: 0 10px -10px;
   }
 
@@ -702,6 +703,8 @@ body {
 
 
 }
+
+
 
 
 @media (max-width: 420px) {

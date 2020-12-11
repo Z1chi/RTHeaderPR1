@@ -83,10 +83,11 @@
   background-image: url("../img/header_1versiya.png");
   background-color: #0228a3;
   border-radius: 0 33px 0 0;
-  height: 170px;
+  height: 150px;
   background-size: cover;
   position: relative;
   z-index: 2;
+
 }
 
 .background__pointer_right {
@@ -104,18 +105,16 @@
 
 .background__after_search {
   position: relative;
-  left: -70px;
-  top: -11px;
-  background-image: url("../img/форма_заявки.png");
-  width: calc(100% + 100px);
-  height: 120px;
-  border-radius: 0 0 33px 0;
+  padding: 35px 0;
+  width: 97%;
+  border-radius: 0 0 50px 0;
   z-index: -1;
+  background-color: #0253a3;
   box-shadow: -9px 10px 29px 6px rgba(105, 105, 105, 0.24);
 }
 
 .svgRelative > p {
-  margin: 50px 0 0 0;
+  margin: 0;
 }
 
 .svgRelative {
@@ -124,9 +123,8 @@
   font-family: MullerBold, sans-serif;
   font-size: 51px;
   color: #FFF;
-  display: flex;
+  text-align: center;
   z-index: 3;
-  justify-content: center;
 }
 
 .svgRelative__sup_position {
@@ -154,13 +152,17 @@
 
 
 .content {
-  padding: 70px 0 0 0;
+  padding: 0;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .way {
-  margin: 50px 0 0 5px;
+  margin: 5px;
+}
+
+.header {
+  margin-bottom: 50px;
 }
 
 .content-wrapper {
@@ -179,11 +181,12 @@ section {
 
 }
 
-.section__singleCompany >h2 {
+.section__singleCompany > h2 {
   white-space: nowrap;
-
+  font-size: 18px;
 }
-.section__singleCompany >h2 > img {
+
+.section__singleCompany > h2 > img {
   position: relative;
   top: 5px;
 }
@@ -195,6 +198,7 @@ section {
   font-family: MullerMedium, sans-serif;
   font-size: 12px;
   text-align: center;
+  max-width: 82%;
 }
 
 .singleCompany__head > * svg {
@@ -204,7 +208,7 @@ section {
 }
 
 .section__singleCompany {
-  font-family: MullerMedium, sans-serif;
+  font-family: MullerRegular, sans-serif;
   background-color: #FFFFFF;
   font-size: 18px;
 }
@@ -223,6 +227,7 @@ section {
   display: flex;
   justify-content: space-around;
   /*align-items: center;*/
+  margin-top: 35px;
 }
 
 .middle-content__company > h2 {
@@ -247,6 +252,7 @@ section {
 .middle-content__company__acceptJob {
   text-align: center;
   font-size: 12px;
+  margin: auto 0;
 }
 
 .button_accept_job {
@@ -280,6 +286,7 @@ section {
 .section__singleCompany__description {
   font-size: 13px;
   max-width: 80%;
+  margin: 15px 75px;
 }
 
 .section__singleCompany__border {
@@ -304,10 +311,15 @@ section {
   flex-basis: 30%;
 }
 
+.content_vacancy > img {
+  margin: 10px;
+}
+
 .content_vacancy__title {
-text-align: center;
+  text-align: center;
   font-family: MullerBold, sans-serif;
   font-size: 20px;
+  margin: 5px;
 }
 
 .vacancyCompany__title {
@@ -321,8 +333,9 @@ text-align: center;
   flex-direction: column;
 
 }
+
 .vacancyCompany__title_img {
-  height: 40px ;
+  height: 40px;
   width: 110px;
 }
 
@@ -361,16 +374,28 @@ text-align: center;
   color: #2a2a2a;
 }
 
+.section__singleCompany__max-width {
+  max-width: 562px;
+}
+
+#map {
+  margin: 15px 75px
+}
 
 /* Блок контента конец */
-
-
-
 
 
 @media (max-width: 1500px) {
   .iconChair {
     display: none;
+  }
+
+  .search {
+
+  }
+
+  .header {
+    margin-bottom: 0;
   }
 }
 
@@ -392,7 +417,7 @@ text-align: center;
 
 
   .background__after_search {
-    width: calc(100% + 70px);
+    width: 100%;
   }
 
 
@@ -435,7 +460,10 @@ text-align: center;
   }
 
   .content_vacancy {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
   }
 
   .slider {
@@ -445,43 +473,109 @@ text-align: center;
 
 @media (max-width: 1030px) {
 
+
   .svgRelative {
+
     font-size: 25px;
   }
+
+  .background__pointer_right {
+    display: none;
+  }
+
+  .search {
+    border-radius: 0;
+  }
+
+  .background__after_search {
+    border-radius: 0;
+  }
+
 }
+
 @media (max-width: 700px) {
-  .section__singleCompany >h2 {
+  .section__singleCompany > h2 {
     text-align: center;
     margin: 0 auto;
-    font-size: 22px;
+  }
+
+  .typeOfWork {
+    text-align: center;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
+
+  .section__singleCompany__description {
+    margin: 15px 30px;
+  }
+
+  #map {
+    margin: 15px 30px;
+
+  }
+
   .middle-content__company {
     flex-direction: column;
   }
+
   .middle-content__company__number {
     margin: 25px auto 40px
   }
-  .section__singleCompany >h2 {
+
+  .section__singleCompany > h2 {
     font-size: 18px;
     white-space: normal;
   }
+
+  .search {
+    height: 185px;
+
+  }
+
+  .svgRelative__sup_position {
+    font-size: 13px;
+  }
+
+  .svgRelative {
+
+    font-size: 20px;
+  }
 }
 
+.content_vacancy {
+
+}
+
+
 @media (max-width: 550px) {
+
+  .formSearch {
+    margin: 0 15px 9px;
+  }
+
+  .background__after_search {
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .header {
+
+  }
+
+  .container__section {
+    margin-top: 80px;
+  }
+
   .background__pointer_right {
     top: 165px;
   }
 
   .svgRelative__sup_position {
     font-size: 10px;
-  }
-
-  .svgRelative {
-    font-size: 14px;
-    margin-left: 60px;
+    position: absolute;
+    right: 20vw;
+    top: -15px;
   }
 
   .singleCompany__head {
@@ -490,13 +584,11 @@ text-align: center;
   }
 
 
-
 }
 
 @media (max-width: 400px) {
-  .section__singleCompany > h2 {
-    font-size: 14px;
-  }
+
+
   .slider {
     height: 450px;
 
@@ -507,4 +599,8 @@ text-align: center;
     max-height: 400px;
   }
 
+  .content_vacancy > img {
+    width: 100%;
+    height: auto;
+  }
 }

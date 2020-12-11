@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Rabota.Today</title>
-    <link rel="stylesheet" href="css/header.css" type="text/css">
-    <link rel="stylesheet" href="font/font.css" type="text/css">
-    <link rel="stylesheet" href="css/side-bar.css">
-    <link rel="stylesheet" href="css/all-vacancy.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    <!--<script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Rabota.Today</title>
+  <link rel="stylesheet" href="css/header.css" type="text/css">
+  <link rel="stylesheet" href="font/font.css" type="text/css">
+  <link rel="stylesheet" href="css/side-bar.css">
+  <link rel="stylesheet" href="css/all-vacancy.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
+  <!--<script src="https://use.fontawesome.com/7ffe9e3f69.js"></script>-->
 
 
 </head>
@@ -26,342 +26,348 @@
 <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
 <div class="container">
-    <header class="header-wrap">
-        <div class="jsOpenNavMenu header-wrap__button_menu">
-            <img class="jsMenuLogo " src="./img/grid.png"  height="34" width="34"/>
-            <img class="jsMenuLogoActive btn-active" src="./img/grid_active.png"  height="34" width="34"/>
-        </div>
-        <div class="filter-overlay nav-overlay jsNavOverlay" style="display: block;"></div>
-        <nav class="nav-logo">
-            <a class="" href="">
-                <img src="./img/logo-main_(2).jpg" alt="logo"></a>
-            <a href="">Россия</a>
-        </nav>
-        <div class="jsNavMenu header-wrap__navParent">
-            <nav class="navigation">
-                <a class="navigation_active" href="">Вакансии</a>
-                <a class="" href="">Резюме</a>
-                <a class="" href="">Компании</a>
-                <a class="" href="">Работодателю</a>
-                <div><a class=" menu_logo-visible"><img src="./img/logo-main_(3).png" height="44" width="237"/></a></div>
-            </nav>
-        </div>
-        <nav class="nav-pa">
-            <a href="">Вход</a>
-            <a href="">Регистрация</a>
-            <a class="abstract" href="">Добавить Резюме</a>
-        </nav>
-    </header>
-    <div class="search">
-        <form class="formSearch">
-            <!--    <div class="searchCity">-->
-            <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
-            <label  class="formSearch__select">
-                <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
-                    <option value="dnr">ДНР</option>
-                    <option value="lnr">ЛНР</option>
-                </select>
-            </label>
-            <!--<button><i class="fa fa-times"></i></button>-->
-            <!--</div>-->
-            <div class="searchCity">
-                <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
-                       placeholder="Должность или компания">
-                <button class="searchCity__button_color"><img src="./img/search.svg" alt=""></button>
-            </div>
-
-            <!-- <div class="border">-->
-            <a data-search="vacancy" class="border_before">Найти вакансии</a>
-            <!-- </div>-->
-        </form>
-        <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>
+  <header class="header-wrap">
+    <div class="jsOpenNavMenu header-wrap__button_menu">
+      <img class="jsMenuLogo " src="./img/grid.png" height="34" width="34"/>
+      <img class="jsMenuLogoActive btn-active" src="./img/grid_active.png" height="34" width="34"/>
     </div>
+    <div class="filter-overlay nav-overlay jsNavOverlay" style="display: block;"></div>
+    <nav class="nav-logo">
+      <a class="" href="">
+        <img src="./img/logo-main_(2).jpg" alt="logo"></a>
+      <a href="">Россия</a>
+    </nav>
+    <div class="jsNavMenu header-wrap__navParent">
+      <nav class="navigation">
+        <a class="navigation_active" href="">Вакансии</a>
+        <a class="" href="">Резюме</a>
+        <a class="" href="">Компании</a>
+        <a class="" href="">Работодателю</a>
+        <div><a class=" menu_logo-visible"><img src="./img/logo-main_(3).png" height="44" width="237"/></a></div>
+      </nav>
+    </div>
+    <nav class="nav-pa">
+      <a href="">Вход</a>
+      <a href="">Регистрация</a>
+      <a class="abstract" href="">Добавить Резюме</a>
+    </nav>
+  </header>
+  <div class="search">
+    <form class="formSearch">
+      <!--    <div class="searchCity">-->
+      <!--<input class="searchCity__input" type="text" name="cityHeader" placeholder="Город">-->
+      <label class="formSearch__select">
+        <select id="select2City" class="searchCity__select js-example-basic-single" name="state">
+          <option value="dnr">ДНР</option>
+          <option value="lnr">ЛНР</option>
+        </select>
+      </label>
+      <!--<button><i class="fa fa-times"></i></button>-->
+      <!--</div>-->
+      <div class="searchCity">
+        <input class="searchCity__input searchVacancy" type="text" name="vacancyHeader"
+               placeholder="Должность или компания">
+        <button class="searchCity__button_color"><img src="./img/search.svg" alt=""></button>
+      </div>
+
+      <!-- <div class="border">-->
+      <a data-search="vacancy" class="border_before">НАЙТИ ВАКАНСИИ</a>
+      <!-- </div>-->
+    </form>
+    <div class="iconChair"><img src="./img/icon-cat-vacancies-rotator.png"></div>
+  </div>
 </div>
 <div class="jsFilterOverlay filter-overlay"></div>
 <div class="container">
-    <div class="way">
-        <ul>
-            <li class="way__link"><a href=""><span>Работа в Москве</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+  <div class="way">
+    <ul>
+      <li class="way__link"><a href=""><span>Работа в Москве</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии в Москве</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии в Москве</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии в Москве</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии в Москве</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии менеджера по работе с клиентами</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии менеджера по работе с клиентами</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-            <li class="way__link"><a href=""><span>Вакансии в Москве</span>
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="10px" height="20px" viewBox="0 0 444.819 444.819"
-                     style="enable-background:new 0 0 444.819 444.819;"
-                     xml:space="preserve"><g>
+      </a>
+      </li>
+      <li class="way__link"><a href=""><span>Вакансии в Москве</span>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="20px" viewBox="0 0 444.819 444.819"
+             style="enable-background:new 0 0 444.819 444.819;"
+             xml:space="preserve"><g>
 	<path d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264
 		c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168
 		c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413
 		c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864
 		c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z"/>
 </g></svg>
-            </a>
-            </li>
-        </ul>
-    </div>
-    <button class="container__side-button_filter jsShowFilter">Открыть фильтр</button>
-    <div class="catalog">
-        <aside class="jsOpenFilter">
-            <div class="catalog-vacancy">
-                <div class="svgRelative"><p>Работа в Москве
-                    <sup>+55 за сегодня</sup></p>
-                    <svg id="SVGDoc" width="76" height="77" xmlns="http://www.w3.org/2000/svg" version="1.1"
+      </a>
+      </li>
+    </ul>
+    <div class="svgRelative"><p>Работа в Москве
+      <sup>+55 за сегодня</sup></p>
+      <svg id="SVGDoc" width="76" height="77" xmlns="http://www.w3.org/2000/svg" version="1.1"
 
-                         viewBox="0 0 76 77">
-                        <defs>
-                            <mask id="Mask1018" x="-1" y="-1" width="2" height="2">
-                                <rect width="33" height="33" x="18" y="16" fill="#ffffff"></rect>
-                                <path d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
-                                      fill="#000000"></path>
-                            </mask>
-                            <filter id="Filter1022" width="110.5" height="113.1" x="-19" y="-21"
-                                    filterUnits="userSpaceOnUse">
-                                <feOffset dx="3.5" dy="6.1" result="FeOffset1023Out" in="SourceGraphic"></feOffset>
-                                <feGaussianBlur stdDeviation="10.8 10.8" result="FeGaussianBlur1024Out"
-                                                in="FeOffset1023Out"></feGaussianBlur>
-                            </filter>
-                        </defs>
-                        <desc>Generated with Avocode.</desc>
-                        <g>
-                            <g><title>Эллипс 1 копия 5</title>
-                                <g filter="url(#Filter1022)">
-                                    <path d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
-                                          fill="none" stroke-opacity="0.43" stroke-width="0"
-                                          mask="url(&quot;#Mask1018&quot;)"></path>
-                                    <path d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
-                                          fill="#80375d" fill-opacity="0.43"></path>
-                                </g>
-                                <path d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
-                                      fill="#df574f" fill-opacity="1"></path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="aside__side-bar">
-                    <button class="aside__side-bar__button jsOpenCheck">
-                        <span class=" side-bar__button__span">КАТЕГОРИЯ</span>
-                        <svg class="jsBtnPlus btn-active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+           viewBox="0 0 76 77">
+        <defs>
+          <mask id="Mask1018" x="-1" y="-1" width="2" height="2">
+            <rect width="33" height="33" x="18" y="16" fill="#ffffff"></rect>
+            <path
+              d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
+              fill="#000000"></path>
+          </mask>
+          <filter id="Filter1022" width="110.5" height="113.1" x="-19" y="-21"
+                  filterUnits="userSpaceOnUse">
+            <feOffset dx="3.5" dy="6.1" result="FeOffset1023Out" in="SourceGraphic"></feOffset>
+            <feGaussianBlur stdDeviation="10.8 10.8" result="FeGaussianBlur1024Out"
+                            in="FeOffset1023Out"></feGaussianBlur>
+          </filter>
+        </defs>
+        <desc>Generated with Avocode.</desc>
+        <g>
+          <g><title>Эллипс 1 копия 5</title>
+            <g filter="url(#Filter1022)">
+              <path
+                d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
+                fill="none" stroke-opacity="0.43" stroke-width="0"
+                mask="url(&quot;#Mask1018&quot;)"></path>
+              <path
+                d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
+                fill="#80375d" fill-opacity="0.43"></path>
+            </g>
+            <path
+              d="M34.28996,15.99994c8.99677,0 16.29009,7.29325 16.29009,16.29007c0,8.99671 -7.29332,16.28996 -16.29009,16.28996c-8.99666,0 -16.28998,-7.29325 -16.28998,-16.28996c0,-8.99682 7.29332,-16.29007 16.28998,-16.29007z"
+              fill="#df574f" fill-opacity="1"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <button class="container__side-button_filter jsShowFilter">Открыть фильтр</button>
+  <div class="catalog">
+    <aside class="jsOpenFilter">
+      <div class="catalog-vacancy">
+
+        <div class="aside__side-bar">
+          <button class="aside__side-bar__button jsOpenCheck">
+            <span class=" side-bar__button__span">КАТЕГОРИЯ</span>
+            <svg class="jsBtnPlus btn-active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258"
                 gradientTransform="matrix(1 0 0 -1 0 514)">
 	<stop offset="0" style="stop-color:#00F2FE"/>
-    <stop offset="0.021" style="stop-color:#03EFFE"/>
-    <stop offset="0.293" style="stop-color:#24D2FE"/>
-    <stop offset="0.554" style="stop-color:#3CBDFE"/>
-    <stop offset="0.796" style="stop-color:#4AB0FE"/>
-    <stop offset="1" style="stop-color:#4FACFE"/>
+  <stop offset="0.021" style="stop-color:#03EFFE"/>
+  <stop offset="0.293" style="stop-color:#24D2FE"/>
+  <stop offset="0.554" style="stop-color:#3CBDFE"/>
+  <stop offset="0.796" style="stop-color:#4AB0FE"/>
+  <stop offset="1" style="stop-color:#4FACFE"/>
 </linearGradient>
-                            <path class="patch" style="fill:url(#SVGID_1_);" d="M492,236H276V20c0-11.046-8.954-20-20-20s-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20
+              <path class="patch" style="fill:url(#SVGID_1_);" d="M492,236H276V20c0-11.046-8.954-20-20-20s-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20
 	c0,11.046,8.954,20,20,20h216v216c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V276h216c11.046,0,20-8.954,20-20
 	S503.046,236,492,236z"/>
 
 
 </svg>
-                        <svg class="jsBtnMinus" version="1.1" id="Capa_1" width="15" height="50"
-                             xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <svg class="jsBtnMinus" version="1.1" id="Capa_1" width="15" height="50"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258"
                 gradientTransform="matrix(1 0 0 -1 0 514)">
 	<stop offset="0" style="stop-color:#00F2FE"/>
-    <stop offset="0.021" style="stop-color:#03EFFE"/>
-    <stop offset="0.293" style="stop-color:#24D2FE"/>
-    <stop offset="0.554" style="stop-color:#3CBDFE"/>
-    <stop offset="0.796" style="stop-color:#4AB0FE"/>
-    <stop offset="1" style="stop-color:#4FACFE"/>
+  <stop offset="0.021" style="stop-color:#03EFFE"/>
+  <stop offset="0.293" style="stop-color:#24D2FE"/>
+  <stop offset="0.554" style="stop-color:#3CBDFE"/>
+  <stop offset="0.796" style="stop-color:#4AB0FE"/>
+  <stop offset="1" style="stop-color:#4FACFE"/>
 </linearGradient>
-                            <path class="patch" style="fill:url(#SVGID_1_);" d="M492,276H20c-11.046,0-20-8.954-20-20s8.954-20,20-20h472c11.046,0,20,8.954,20,20
+              <path class="patch" style="fill:url(#SVGID_1_);" d="M492,276H20c-11.046,0-20-8.954-20-20s8.954-20,20-20h472c11.046,0,20,8.954,20,20
 	C512,267.046,503.046,276,492,276z"/>
 </svg>
-                    </button>
-                    <div id="category-checkbox" class="aside__side-bar__button__checkbox">
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Курьерские услуги</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Ремонт и строительство</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Грузоперевозки</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Уборка и помощь по хозяйству</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Виртуальный помощник</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Компьютерная помощь</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Мероприятия и промо-акции</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Дизайн</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Web-разработка</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Фото- и видео-услуги</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Установка и ремонт техники</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Красота и здоровье</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Ремонт цифровой техники</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Юридическая помощь</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Репетиторы и обучение</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Ремонт транспорта</div>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <div class="checkbox__text">Случайные задан</div>
-                        </label>
-                    </div>
-                    <button class="aside__side-bar__button jsOpenCheck">
-                        <span class="side-bar__button__span">БЮДЖЕТ</span>
-                        <svg class="jsBtnPlus btn-active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          </button>
+          <div id="category-checkbox" class="aside__side-bar__button__checkbox">
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Курьерские услуги</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Ремонт и строительство</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Грузоперевозки</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Уборка и помощь по хозяйству</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Виртуальный помощник</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Компьютерная помощь</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Мероприятия и промо-акции</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Дизайн</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Web-разработка</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Фото- и видео-услуги</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Установка и ремонт техники</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Красота и здоровье</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Ремонт цифровой техники</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Юридическая помощь</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Репетиторы и обучение</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Ремонт транспорта</div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox"/>
+              <div class="checkbox__text">Случайные задан</div>
+            </label>
+          </div>
+          <button class="aside__side-bar__button jsOpenCheck">
+            <span class="side-bar__button__span">БЮДЖЕТ</span>
+            <svg class="jsBtnPlus btn-active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258"
                 gradientTransform="matrix(1 0 0 -1 0 514)">
 	<stop offset="0" style="stop-color:#00F2FE"/>
-    <stop offset="0.021" style="stop-color:#03EFFE"/>
-    <stop offset="0.293" style="stop-color:#24D2FE"/>
-    <stop offset="0.554" style="stop-color:#3CBDFE"/>
-    <stop offset="0.796" style="stop-color:#4AB0FE"/>
-    <stop offset="1" style="stop-color:#4FACFE"/>
+  <stop offset="0.021" style="stop-color:#03EFFE"/>
+  <stop offset="0.293" style="stop-color:#24D2FE"/>
+  <stop offset="0.554" style="stop-color:#3CBDFE"/>
+  <stop offset="0.796" style="stop-color:#4AB0FE"/>
+  <stop offset="1" style="stop-color:#4FACFE"/>
 </linearGradient>
-                            <path class="patch" style="fill:url(#SVGID_1_);" d="M492,236H276V20c0-11.046-8.954-20-20-20s-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20
+              <path class="patch" style="fill:url(#SVGID_1_);" d="M492,236H276V20c0-11.046-8.954-20-20-20s-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20
 	c0,11.046,8.954,20,20,20h216v216c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V276h216c11.046,0,20-8.954,20-20
 	S503.046,236,492,236z"/>
 
 </svg>
-                        <svg class="jsBtnMinus" version="1.1" id="Capa_1" width="15" height="50"
-                             xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <svg class="jsBtnMinus" version="1.1" id="Capa_1" width="15" height="50"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="512" y2="258"
                 gradientTransform="matrix(1 0 0 -1 0 514)">
 	<stop offset="0" style="stop-color:#00F2FE"/>
-    <stop offset="0.021" style="stop-color:#03EFFE"/>
-    <stop offset="0.293" style="stop-color:#24D2FE"/>
-    <stop offset="0.554" style="stop-color:#3CBDFE"/>
-    <stop offset="0.796" style="stop-color:#4AB0FE"/>
-    <stop offset="1" style="stop-color:#4FACFE"/>
+  <stop offset="0.021" style="stop-color:#03EFFE"/>
+  <stop offset="0.293" style="stop-color:#24D2FE"/>
+  <stop offset="0.554" style="stop-color:#3CBDFE"/>
+  <stop offset="0.796" style="stop-color:#4AB0FE"/>
+  <stop offset="1" style="stop-color:#4FACFE"/>
 </linearGradient>
-                            <path class="patch" style="fill:url(#SVGID_1_);" d="M492,276H20c-11.046,0-20-8.954-20-20s8.954-20,20-20h472c11.046,0,20,8.954,20,20
+              <path class="patch" style="fill:url(#SVGID_1_);" d="M492,276H20c-11.046,0-20-8.954-20-20s8.954-20,20-20h472c11.046,0,20,8.954,20,20
 	C512,267.046,503.046,276,492,276z"/>
 </svg>
-                    </button>
-                    <form>
-                        <div id="cost-input" class="input-cost">
-                            <input type="text" class="input-cost__price" placeholder="ОТ" pattern="^[ 0-9]+$">
-                            <input type="text" class="input-cost__price" placeholder="ДО" pattern="^[ 0-9]+$">
-                        </div>
-                    </form>
-                    <button class="input-cost__submit" type="submit">Применить</button>
-                </div>
+          </button>
+          <form>
+            <div id="cost-input" class="input-cost">
+              <input type="text" class="input-cost__price" placeholder="ОТ" pattern="^[ 0-9]+$">
+              <input type="text" class="input-cost__price" placeholder="ДО" pattern="^[ 0-9]+$">
             </div>
-        </aside>
-        <section>
-            <div class="single-vacancy">
-                <div class="single-vacancy__block-left">
-                    <div class="single-vacancy__tegs">
-                        <a class="single-vacancy__tegs__style">Розничная торговля</a>
-                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
-                        <a class="single-vacancy__tegs__style">Транспорт, авто</a>
-                    </div>
-                    <div class="single-vacancy__info-job">
-                        <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
-                        <p class="single-vacancy__name-company">ООО АНКОР</p>
-                        <div class="single-vacancy__info-views">
-                            <p>Добавлено: 12.10.2020</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 488.85 488.85" width="15px" height="15px"
-                                 style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+          </form>
+          <button class="input-cost__submit" type="submit">Применить</button>
+        </div>
+      </div>
+    </aside>
+    <section>
+
+      <div class="single-vacancy">
+        <div class="single-vacancy__block-left">
+          <div class="single-vacancy__tegs">
+            <a class="single-vacancy__tegs__style">Розничная торговля</a>
+            <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+            <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+          </div>
+          <div class="single-vacancy__info-job">
+            <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
+            <p class="single-vacancy__name-company">ООО АНКОР</p>
+            <div class="single-vacancy__info-views">
+              <p>Добавлено: 12.10.2020</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 488.85 488.85" width="15px" height="15px"
+                   style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
 <g>
 	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
 		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
@@ -370,11 +376,11 @@
 		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
 </g>
 </svg>
-                            <p>12</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 477.883 477.883" width="15px" height="15px"
-                                 style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+              <p>12</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 477.883 477.883" width="15px" height="15px"
+                   style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
 <g>
 	<g>
 		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
@@ -384,34 +390,35 @@
 	</g>
 </g>
 </svg>
-                            <a href="">Донецк</a></div>
-                        <p class="single-vacancy__payment"> ОТ 400 ₽</p>
-                        <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
-                            nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
-                    </div>
-                </div>
-                <div class="single-vacancy__block_right">
-                    <img src="./img/Слой_9.png" alt="logo-globus">
-                    <button>Посмотреть полностью</button>
-                </div>
-            </div>
-            <div class="single-vacancy">
-                <div class="single-vacancy__block-left">
-                    <div class="single-vacancy__tegs">
-                        <a class="single-vacancy__tegs__style">Розничная торговля</a>
-                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
-                        <a class="single-vacancy__tegs__style">Транспорт, авто</a>
-                    </div>
-                    <div class="single-vacancy__info-job">
-                        <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
-                        <p class="single-vacancy__name-company">ООО АНКОР</p>
-                        <div class="single-vacancy__info-views">
-                            <p>Добавлено: 12.10.2020</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 488.85 488.85" width="15px" height="15px"
-                                 style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+              <a href="">Донецк</a></div>
+            <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+            <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
+              nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+          </div>
+        </div>
+        <div class="single-vacancy__block_right">
+          <img src="./img/Слой_9.png" alt="logo-globus">
+          <button>Посмотреть полностью</button>
+        </div>
+      </div>
+
+      <div class="single-vacancy">
+        <div class="single-vacancy__block-left">
+          <div class="single-vacancy__tegs">
+            <a class="single-vacancy__tegs__style">Розничная торговля</a>
+            <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+            <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+          </div>
+          <div class="single-vacancy__info-job">
+            <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
+            <p class="single-vacancy__name-company">ООО АНКОР</p>
+            <div class="single-vacancy__info-views">
+              <p>Добавлено: 12.10.2020</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 488.85 488.85" width="15px" height="15px"
+                   style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
 <g>
 	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
 		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
@@ -420,11 +427,11 @@
 		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
 </g>
 </svg>
-                            <p>12</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 477.883 477.883" width="15px" height="15px"
-                                 style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+              <p>12</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 477.883 477.883" width="15px" height="15px"
+                   style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
 <g>
 	<g>
 		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
@@ -434,34 +441,35 @@
 	</g>
 </g>
 </svg>
-                            <a href="">Донецк</a></div>
-                        <p class="single-vacancy__payment"> ОТ 400 ₽</p>
-                        <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
-                            nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
-                    </div>
-                </div>
-                <div class="single-vacancy__block_right">
-                    <img src="./img/Слой_9.png" alt="logo-globus">
-                    <button>Посмотреть полностью</button>
-                </div>
-            </div>
-            <div class="single-vacancy">
-                <div class="single-vacancy__block-left">
-                    <div class="single-vacancy__tegs">
-                        <a class="single-vacancy__tegs__style">Розничная торговля</a>
-                        <a class="single-vacancy__tegs__style">Рабочие специальности</a>
-                        <a class="single-vacancy__tegs__style">Транспорт, авто</a>
-                    </div>
-                    <div class="single-vacancy__info-job">
-                        <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
-                        <p class="single-vacancy__name-company">ООО АНКОР</p>
-                        <div class="single-vacancy__info-views">
-                            <p>Добавлено: 12.10.2020</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 488.85 488.85" width="15px" height="15px"
-                                 style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
+              <a href="">Донецк</a></div>
+            <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+            <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
+              nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+          </div>
+        </div>
+        <div class="single-vacancy__block_right">
+          <img src="./img/Слой_9.png" alt="logo-globus">
+          <button>Посмотреть полностью</button>
+        </div>
+      </div>
+
+      <div class="single-vacancy">
+        <div class="single-vacancy__block-left">
+          <div class="single-vacancy__tegs">
+            <a class="single-vacancy__tegs__style">Розничная торговля</a>
+            <a class="single-vacancy__tegs__style">Рабочие специальности</a>
+            <a class="single-vacancy__tegs__style">Транспорт, авто</a>
+          </div>
+          <div class="single-vacancy__info-job">
+            <a href="" class="info-job__name-vacancy">Заправщик-Продавец на АЗС</a>
+            <p class="single-vacancy__name-company">ООО АНКОР</p>
+            <div class="single-vacancy__info-views">
+              <p>Добавлено: 12.10.2020</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 488.85 488.85" width="15px" height="15px"
+                   style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve">
 <g>
 	<path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2
 		s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025
@@ -470,11 +478,11 @@
 		c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/>
 </g>
 </svg>
-                            <p>12</p>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 477.883 477.883" width="15px" height="15px"
-                                 style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
+              <p>12</p>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 477.883 477.883" width="15px" height="15px"
+                   style="enable-background:new 0 0 477.883 477.883;" xml:space="preserve">
 <g>
 	<g>
 		<path d="M468.456,1.808c-4.811-2.411-10.478-2.411-15.289,0l0,0L9.433,223.675c-8.429,4.219-11.842,14.471-7.624,22.9
@@ -484,20 +492,20 @@
 	</g>
 </g>
 </svg>
-                            <a href="">Донецк</a></div>
-                        <p class="single-vacancy__payment"> ОТ 400 ₽</p>
-                        <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
-                            nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
-                    </div>
-                </div>
-                <div class="single-vacancy__block_right">
-                    <img src="./img/Слой_9.png" alt="logo-globus">
-                    <button>Посмотреть полностью</button>
-                </div>
-            </div>
-        </section>
-    </div>
+              <a href="">Донецк</a></div>
+            <p class="single-vacancy__payment"> ОТ 400 ₽</p>
+            <p class="single-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquam blanditiis debitis dolorum eaque error facere id inventore libero magnam minus nam
+              nesciunt nulla perspiciatis quibusdam quod reiciendis, rem suscipit temporibus.</p>
+          </div>
+        </div>
+        <div class="single-vacancy__block_right">
+          <img src="./img/Слой_9.png" alt="logo-globus">
+          <button>Посмотреть полностью</button>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 <script src="js/jQuery%20v3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>

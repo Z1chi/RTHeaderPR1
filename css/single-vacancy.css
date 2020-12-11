@@ -46,10 +46,6 @@ section {
 }
 
 
-.content_advertising__single > * {
-  margin-left: 12%;
-}
-
 .content_vacancy {
   flex-basis: 30%;
   display: flex;
@@ -66,10 +62,10 @@ section {
   max-width: 270px;
   position: relative;
   margin-bottom: 55px;
-  padding: 40px;
+  padding: 0;
 }
 
-.content_advertising__single > button {
+.content_advertising__single__button {
   border-radius: 18px;
   background-color: #dd2629;
   height: 38px;
@@ -77,12 +73,12 @@ section {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 12px;
-  font-family: MullerRegular, sans-serif;
+  font-family: MullerExtraBold, sans-serif;
   color: #ffffff;
   border: none;
   white-space: nowrap;
-  margin: 0 0 0 10%;
   cursor: pointer;
+  margin: 0 auto;
   transition: background-color 0.5s;
 }
 
@@ -94,9 +90,6 @@ section {
 }
 */
 
-.content_advertising__single > * {
-  margin-left: 12%;
-}
 
 .content_vacancy {
   flex-basis: 30%;
@@ -105,21 +98,27 @@ section {
   margin-right: 5px;
 }
 
-.content_advertising__single > button:hover {
+.content_advertising__single__button:hover {
   background-color: #941515;
   transition: background-color 0.5s;
 }
 
 .content_advertising__single > img {
-  max-width: 160px;
+  margin: 0 auto;
   height: auto;
+  width: 170px;
+}
+
+.content_advertising__single__text > button {
+
+  position: relative;
+  bottom: 80px;
 }
 
 .advert__name-company {
   font-family: MullerBold, sans-serif;
-  font-size: 20px;
-  text-align: left;
-  margin: 0 0 20px 0;
+  font-size: 16px;
+  margin: 20px auto;
 
 }
 
@@ -143,18 +142,27 @@ section {
   font-size: 12px;
   text-align: center;
   max-width: 160px;
-  margin: 20px 0 0 10%;
+  margin: 20px auto;
 }
 
 .advert__moloko {
-  background-color: #ddf0fb;
   border-radius: 10px;
+}
 
+.advert__moloko > img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .content_advertising__single__text > img {
   margin-bottom: 20px;
   align-items: center;
+}
+
+.content_advertising__single__text {
+  margin: 0 auto;
+  width: 200px;
 }
 
 
@@ -374,7 +382,7 @@ section {
 
 @media (max-width: 1365px) {
   .single-vacancy {
-    margin: 20px 10px;
+    margin: 20px 5px;
   }
 
   .single-vacancy__recommendation > p {
@@ -415,6 +423,7 @@ section {
 
   .content_advertising__single {
     max-height: 450px;
+    margin: 50px 0 0;
   }
 
   .content-single {
@@ -445,7 +454,7 @@ section {
     padding-right: 0;
     width: auto;
     flex-direction: column;
-    margin: 0 10px 0 5px;
+   /* margin: 0 5px 0 ;*/
   }
 
   .single-vacancy > .single-vacancy__button-send-summary {
@@ -453,7 +462,7 @@ section {
   }
 
   .single-vacancy__block-left {
-    margin: 10px 10px 0 10px;
+    margin: 15px;
     flex-basis: 100%;
   }
 
@@ -481,13 +490,14 @@ section {
   }
 
   .content_advertising__single {
-    margin: 5px auto;
+    margin: 50px auto;
 
   }
 
   .single-vacancy__info-job > * {
     flex-direction: column;
   }
+
   .single-vacancy__info-views {
     flex-direction: row;
   }
@@ -526,6 +536,9 @@ section {
     display: none;
   }
 
+  .abstract {
+    padding: 10px 5px;
+  }
 
   .single-vacancy__block_right > img {
     display: none;
@@ -533,7 +546,7 @@ section {
 
   .single-vacancy__info-views {
     flex-direction: row;
-    margin: 5px 10px;
+    margin: 5px 0;
   }
 
   .way > ul > li > a {

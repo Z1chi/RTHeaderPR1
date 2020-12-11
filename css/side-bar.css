@@ -26,35 +26,6 @@ body {
     top: 100px;
 }
 
-.catalog-vacancy > div > p {
-    position: relative;
-    font-size: 30px;
-    font-family: MullerBold, sans-serif;
-    z-index: 36;
-    color: #0253a3;
-    max-width: 330px;
-}
-
-.catalog-vacancy > div > p > sup {
-    font-size: 10px;
-    z-index: 36;
-    color: #000000;
-    position: relative;
-}
-
-.svgRelative {
-    position: relative;
-    max-width: 330px;
-    white-space: nowrap;
-}
-
-.svgRelative > svg {
-    color: #dd2629;
-    position: absolute;
-    z-index: 1;
-    right: 30px;
-    top: -23px
-}
 
 .aside__side-bar__button__checkbox {
     position: relative;
@@ -233,9 +204,7 @@ body {
 }
 
 @media (max-width: 1365px) {
-    .svgRelative {
-        margin: 0 0 0 30px;
-    }
+
     .aside__side-bar__button__checkbox{
         margin-left: 10px  ;
     }

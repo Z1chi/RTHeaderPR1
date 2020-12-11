@@ -137,8 +137,27 @@ $(document).ready(function () {
 	$('.select2-container').children().css('border-radius', '0px')
 });
 
-/** Смена роли кнопки поиска */
+
 window.onload = function () {
+
+	/** Перенос текста в другой блок home-page */
+	function transferEl(el, parentEl, minWidth, maxWidth) {
+		let width = window.innerWidth;
+
+		if (el && parentEl) { 	/** проверка на существование элементов */
+			width <= minWidth ? parentEl.appendChild(el) : false;
+			width >= maxWidth ? parentEl.appendChild(el) : false
+		}
+	}
+
+	let secondParentEl = document.querySelector(".content-wrapper__search-job__content-block-text");
+	let el = document.querySelector(".content-wrapper__search-job__content-block-footer-text");
+	let parentEl = document.querySelector(".content-wrapper__search-job-content-inner__button-parent");
+	transferEl(el, parentEl, "973");
+	transferEl(el, secondParentEl, "550");
+
+
+	/** Смена роли кнопки поиска */
 	let searchVacancy = document.querySelector('[data-search]');
 	let toggleRole = document.querySelector("#toggleRole");
 	if (toggleRole) {
@@ -151,6 +170,7 @@ window.onload = function () {
 		});
 	}
 };
+
 
 /*
 'use strict';
