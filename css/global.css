@@ -30,6 +30,7 @@ select {
   width: 100%;
   padding: 0;
   position: relative;
+  margin: 0 auto;
 }
 
 .btn-active {
@@ -89,8 +90,13 @@ div#imgRed {
 
 .background-bottom {
   position: absolute;
-  bottom: -90%;
-  left: -350px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #dd3d34;
+  box-shadow: 29px 29px 29px 29px rgba(105, 105, 105, 0.24);
+  bottom: -260px;
+  left: -240px;
 }
 .background-bottom > img {
 

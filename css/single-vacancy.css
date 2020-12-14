@@ -172,9 +172,6 @@ section {
 }
 
 .single-vacancy__tegs {
-  cursor: pointer;
-  /*   width: 70%;
-     margin-right: -100px;*/
 }
 
 .info-job__name-vacancy {
@@ -214,13 +211,16 @@ section {
 
 .single-vacancy__payment-color {
   color: #0d1566;
-
   font-family: MullerExtraBold, sans-serif;
   font-size: 28px;
 }
 
+.single-vacancy__payment-color > span {
+  white-space: nowrap;
+}
+
 .single-vacancy__block-left {
-  margin: 20px 30px;
+  margin: 20px 30px 0;
   flex-basis: 80%;
 }
 
@@ -317,6 +317,7 @@ section {
 }
 
 .single-vacancy__tegs > .single-vacancy__tegs__style {
+  cursor: pointer;
   color: #FFFFFF;
   display: inline-block;
   font-family: MullerRegular, sans-serif;
@@ -393,11 +394,11 @@ section {
 @media (max-width: 1096px) {
   .single-vacancy {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .single-vacancy__block_right {
-    margin: 0 10px 10px 0;
+    margin: 0 20px 20px;
   }
 
   /*  .single-vacancy__block-left {
@@ -454,7 +455,7 @@ section {
     padding-right: 0;
     width: auto;
     flex-direction: column;
-   /* margin: 0 5px 0 ;*/
+    /* margin: 0 5px 0 ;*/
   }
 
   .single-vacancy > .single-vacancy__button-send-summary {
@@ -536,10 +537,6 @@ section {
     display: none;
   }
 
-  .abstract {
-    padding: 10px 5px;
-  }
-
   .single-vacancy__block_right > img {
     display: none;
   }
@@ -552,7 +549,5 @@ section {
   .way > ul > li > a {
     white-space: normal;
   }
-
-
 }
 

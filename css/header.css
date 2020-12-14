@@ -63,7 +63,7 @@ body {
 .nav-pa {
   display: flex;
   align-items: center;
-  margin: 5px auto 30px;
+  margin: 5px auto;
 }
 
 .nav-pa > a {
@@ -313,6 +313,7 @@ body {
   min-width: 195px;
   margin-top: 13px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .border_before:hover {
@@ -470,9 +471,7 @@ body {
   }
 
   .nav-logo > a {
-    margin: 5px 15px;
-    align-items: flex-end;
-    /*font-size: 30px;*/
+
   }
 
   .nav-logo {
@@ -703,8 +702,11 @@ body {
 
 
 }
-
-
+@media (max-width: 550px) {
+  .abstract {
+    padding: 10px 5px;
+  }
+}
 
 
 @media (max-width: 420px) {

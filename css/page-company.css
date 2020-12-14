@@ -93,7 +93,7 @@
 .background__pointer_right {
   position: absolute;
   right: 100px;
-  top: 130px;
+  top: 170px;
   z-index: -1;
 }
 
