@@ -1,0 +1,165 @@
+p {
+  margin: 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+
+.rates-section__link-home {
+  margin: 40px auto;
+}
+
+.rates-section__title {
+  margin: 0 auto 40px;
+  font-family: MullerExtraBold, sans-serif;
+  font-size: 26px;
+  color: #121212;
+  line-height: 30px;
+}
+
+.rates-section__secondTitle {
+  font-family: MullerRegular, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+.bold {
+  font-family: MullerBold, sans-serif;
+}
+
+.rates-section__rates-plan {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+.rates-section__rates-plan__single-plan {
+  /*max-width: 350px;*/
+  font-family: MullerExtraBold, sans-serif;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 35px;
+}
+
+.rates-section__rates-plan__single-plan_title {
+margin: 75px 0 55px;
+}
+
+.rates-section__rates-plan__single-plan_list {
+  padding: 0;
+  margin: 0;
+}
+
+.rates-section__rates-plan__single-plan_list-item {
+  font-family: MullerRegular, sans-serif;
+  font-size: 18px;
+  margin: 25px 0;
+  list-style: none;
+  max-width: 340px;
+}
+
+.rates-section__rates-plan__single-plan_list-item:before {
+  content: "·";
+  margin-right: 5px;
+}
+
+.rates-section__rates-plan__single-pay {
+  font-size: 29px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.rates-section__rates-plan__single-pay {
+  margin-bottom: 25px;
+}
+
+.rates-section__rates-plan__single-button-pay {
+  width: 270px;
+  height: 50px;
+  border-radius: 50px;
+  font-family: MullerExtraBold, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.rates-section__description {
+  display: flex;
+  justify-content: space-around;
+  margin: 75px 25px 45px;
+}
+.questions_VK {
+  font-family: MullerMedium, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.questions_VK > img {
+  top: 8px;
+  position: relative;
+  right: -15px;
+}
+
+.rates-section__description_memo{
+  font-family: MullerRegular, sans-serif;
+  font-size: 18px;
+}
+.rates-section__shares {
+  margin: 50px auto;
+  max-width: 950px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  text-align: center;
+  padding: 0 25px;
+  position: relative;
+}
+.rates-section__shares:after {
+  content: '';
+  border: 12px solid transparent;
+  border-bottom: 7px solid #FFF;
+  position: absolute;
+  left: 10%;
+  top: -18px;
+}
+
+.rates-section__shares > ul{
+  padding: 0;
+  margin: 30px;
+}
+
+.rates-section__shares_list {
+  list-style: none;
+  text-align: left;
+  font-family: MullerBold, sans-serif;
+  color: #2a2a2a;
+  font-size: 20px;
+}
+
+.rates-section__shares_list:before {
+  content: "·";
+  margin-right: 5px;
+}
+
+
+@media (max-width: 1050px) {
+  .rates-section__rates-plan {
+    flex-direction: column;
+  }
+  .rates-section__rates-plan__single-plan_list-item {
+    max-width: 500px;
+
+  }
+  .rates-section__rates-plan__single-plan {
+    margin: 0;
+  }
+  .rates-section__shares {
+    padding: 0;
+  }
+}
