@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
 	/* + / - Скрытый сайдбар */
 
 
@@ -133,7 +132,7 @@ $(document).ready(function () {
 			minimumResultsForSearch: -1
 		});
 	}
-	$('.select2-selection').css('border-radius', '0px')
+	$('.select2-selection').css('border-radius', '0px');
 	$('.select2-container').children().css('border-radius', '0px')
 });
 
@@ -155,7 +154,6 @@ window.onload = function () {
 	let parentEl = document.querySelector(".content-wrapper__search-job-content-inner__button-parent");
 	transferEl(el, parentEl, "973");
 	transferEl(el, secondParentEl, "550");
-
 
 	/** Смена роли кнопки поиска */
 	let searchVacancy = document.querySelector('[data-search]');

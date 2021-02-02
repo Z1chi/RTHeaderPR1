@@ -1,6 +1,7 @@
 p {
   margin: 0;
 }
+
 section {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,7 @@ section {
 }
 
 .rates-section__rates-plan__single-plan_title {
-margin: 75px 0 55px;
+  margin: 75px 0 55px;
 }
 
 .rates-section__rates-plan__single-plan_list {
@@ -89,16 +90,45 @@ margin: 75px 0 55px;
   font-size: 18px;
   text-align: center;
   color: #FFFFFF;
+  transition: all ease 0.3s;
 }
-.rates-section__description {
-  display: flex;
-  justify-content: space-around;
-  margin: 75px 25px 45px;
+
+.standart {
+  background-color: #9da5dc;
 }
+
+.standart:hover {
+  background-color: #686f9c;
+}
+
+.premium {
+  background-color: #2942a4;
+}
+.premium:hover {
+  background-color: #162b56;
+}
+.vip {
+  background-color: #dd3d34;
+}
+.vip:hover {
+  background-color: #9b2c28;
+}
+
+.rates-section__rates-plan__single-button-pay:hover {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.rates-section__description > * {
+  margin: 0 15px;
+}
+
 .questions_VK {
   font-family: MullerMedium, sans-serif;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .questions_VK > img {
@@ -107,10 +137,12 @@ margin: 75px 0 55px;
   right: -15px;
 }
 
-.rates-section__description_memo{
+.rates-section__description_memo {
   font-family: MullerRegular, sans-serif;
   font-size: 18px;
+  margin: 75px auto 10px;
 }
+
 .rates-section__shares {
   margin: 50px auto;
   max-width: 950px;
@@ -120,6 +152,7 @@ margin: 75px 0 55px;
   padding: 0 25px;
   position: relative;
 }
+
 .rates-section__shares:after {
   content: '';
   border: 12px solid transparent;
@@ -129,7 +162,7 @@ margin: 75px 0 55px;
   top: -18px;
 }
 
-.rates-section__shares > ul{
+.rates-section__shares > ul {
   padding: 0;
   margin: 30px;
 }
@@ -152,14 +185,37 @@ margin: 75px 0 55px;
   .rates-section__rates-plan {
     flex-direction: column;
   }
+
   .rates-section__rates-plan__single-plan_list-item {
     max-width: 500px;
 
   }
+
   .rates-section__rates-plan__single-plan {
     margin: 0;
   }
+
   .rates-section__shares {
     padding: 0;
+  }
+}
+
+@media (max-width: 921px) {
+  .rates-section__description {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 35px auto 0
+  }
+  .rates-section__rates-plan__single-plan_title {
+    margin: 45px 0 15px;
+  }
+
+  .rates-section__description > * {
+    margin: 10px;
+  }
+
+  .rates-section__shares {
+    margin: 35px auto;
   }
 }
