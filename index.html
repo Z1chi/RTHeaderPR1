@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/header.css" type="text/css">
   <link rel="stylesheet" href="font/font.css" type="text/css">
   <link rel="stylesheet" href="css/global.css" type="text/css">
+
   <link rel="stylesheet" href="css/home-page.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -51,12 +52,238 @@
       </div>
     </nav>
     <div class="jsNavMenu header-wrap__navParent">
-      <nav class="nav-pa">
-        <a class="mobile__font-size" href="">Вход</a>
-        <a class="mobile__font-size" href="">Регистрация</a>
-        <a class="abstract" href="">Добавить Резюме</a>
-      </nav>
+      <div class="jsNavMenu header-wrap__navParent">
+        <nav class="nav-pa cmn-overlays-nav">
+          <div class="clearfix">
+            <a class="link__"  href="#sign">Вход</a>
+            <a class="link__" href="#reg">Регистрация</a>
+            <a class="abstract" href="#resume">Добавить Резюме</a>
+          </div>
+        </nav>
+      </div>
     </div>
+
+
+
+
+<!-- Modal Content Sign-->
+
+<section id="sign">
+  <div class="content">
+    <article>
+      <div class="modal-style modal-login jsModalLogin" style="display: block;">
+        <p>Вход
+        </p>
+        <form id="login-form" action="/user/login" method="post">
+<input type="hidden" name="_csrf" value="al9gHk70gVwtWMKOGF5W9sn_GuTadS4t1yAhU3WAJHJeCAZsO4S5bkBsmttWHyWhooVos4kbGRulRUAGH-9ONA==">
+
+        <div class="form-group field-login-form-login required">
+
+<input type="text" id="login-form-login" class="jsMail" name="login-form[login]" autofocus="autofocus" tabindex="1" placeholder="Электронная почта" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <div class="form-group field-login-form-password required">
+
+<input type="password" id="login-form-password" class="jsPass" name="login-form[password]" tabindex="2" placeholder="Пароль" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <button type="submit" class="jsBtnLogin jsBtn" tabindex="4">Войти</button>            <div id="w0"><ul class="auth-clients"><li><a class="vkontakte auth-link" href="/user/auth?authclient=vkontakte" title="ВКонтакте"><span class="auth-icon vkontakte"></span></a></li></ul></div>            </form>            <div class="modal-style__text">
+           
+
+  
+ 
+
+
+
+
+
+  <nav class="nav-pa cmn-overlays-nav">
+    <div class="clearfix">
+      <a href="#forgot" class="reg_link">Забыли пароль?</a>
+      <a href="#reg" class="reg_link">Зарегистрироваться</a>
+    </div>
+  </nav>
+
+  <!-- <button><a href="">Зарегистрироваться</a></button> -->
+
+    
+            
+        </div>
+    </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+
+<!-- Modal Content Reg-->
+
+<section id="forgot">
+  <div class="content">
+    <article>
+      <div class="modal-style modal-error jsForgotPassModal" style="display: block;">
+        <p>Восстановление пароля</p>
+        <form method="post" action="/reset-password/send-token" id="reset_token_form">
+            <input type="email" placeholder="Ваш Email" name="email">
+            <button>Отправить</button>
+        </form>
+        <div class="modal-style__text">
+          <nav class="nav-pa cmn-overlays-nav">
+            <div class="clearfix">
+              <a href="#auth" class="reg_link">Авторизация</a>
+            </div>
+          </nav>
+           
+        </div>
+    </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+<!-- Modal Content Auth-->
+
+<section id="auth">
+  <div class="content">
+    <article>
+      <div class="modal-style modal-login jsModalLogin" style="display: block;">
+        <p>Вход
+        </p>
+        <form id="login-form" action="/user/login" method="post">
+<input type="hidden" name="_csrf" value="al9gHk70gVwtWMKOGF5W9sn_GuTadS4t1yAhU3WAJHJeCAZsO4S5bkBsmttWHyWhooVos4kbGRulRUAGH-9ONA==">
+
+        <div class="form-group field-login-form-login required">
+
+<input type="text" id="login-form-login" class="jsMail" name="login-form[login]" autofocus="autofocus" tabindex="1" placeholder="Электронная почта" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <div class="form-group field-login-form-password required">
+
+<input type="password" id="login-form-password" class="jsPass" name="login-form[password]" tabindex="2" placeholder="Пароль" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <button type="submit" class="jsBtnLogin jsBtn" tabindex="4">Войти</button>            <div id="w0"><ul class="auth-clients"><li><a class="vkontakte auth-link" href="/user/auth?authclient=vkontakte" title="ВКонтакте"><span class="auth-icon vkontakte"></span></a></li></ul></div>            </form>            <div class="modal-style__text">
+           
+
+  
+  </div>
+ </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+
+
+
+<!-- Modal Content Reg-->
+
+<section id="reg">
+  <div class="content content-reg">
+    <article>
+      <div class="modal-style modal-reg jsModalReg" style="display: block;">
+        <p>Регистрация </p>
+        <form id="registration-form" action="/registration/register" method="post">
+<input type="hidden" name="_csrf" value="gzQUGI72U5TAJvECen_qhTz68mZJLHX_oXXSWxKNeZy3Y3Jq-4Zrpq0SqVc0PpnSV4CAMRpCQsnTELMOeOIT2g==">            <input class="jsName" type="text" name="first_name" placeholder="Имя">
+        <input class="jsSurname" type="text" name="second_name" placeholder="Фамилия">
+        <input type="hidden" name="register-form[username]" value="">
+        <div class="form-group field-register-form-email required">
+
+<input type="text" id="register-form-email" class="jsMail" name="register-form[email]" placeholder="Электронная почта" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <div class="form-group field-register-form-password required">
+
+<input type="password" id="register-form-password" class="jsPass" name="register-form[password]" placeholder="Пароль" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <div class="form-group field-register-form-status required">
+<label class="control-label">Выберите тип аккаунта (после регистраации его нельзя будет изменить):</label>
+<input type="hidden" name="register-form[status]" value=""><div id="register-form-status" role="radiogroup" aria-required="true"><label><input type="radio" name="register-form[status]" value="10"> Соискатель</label>
+<label><input type="radio" name="register-form[status]" value="20"> Работодатель</label>
+<label><input type="radio" name="register-form[status]" value="21"> Частное лицо</label></div>
+
+<div class="help-block"></div>
+</div>            <button type="submit" class="jsBtnReg jsBtn">Зарегистрироваться</button>            </form>            <div class="modal-style__text"><span>Есть учетная запись?</span>
+
+
+  <nav class="nav-pa cmn-overlays-nav">
+    <div class="clearfix">
+      <a href="#empty" class="jsLoginForm reg_link">Войти</a>
+    </div>
+  </nav>
+
+
+
+
+        </div>
+    </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+
+<!-- Modal Content Empty-->
+
+<section id="empty">
+  <div class="content">
+    <article>
+      <div class="modal-style modal-login jsModalLogin" style="display: block;">
+        <p>Вход
+        </p>
+        <form id="login-form" action="/user/login" method="post">
+<input type="hidden" name="_csrf" value="al9gHk70gVwtWMKOGF5W9sn_GuTadS4t1yAhU3WAJHJeCAZsO4S5bkBsmttWHyWhooVos4kbGRulRUAGH-9ONA==">
+
+        <div class="form-group field-login-form-login required">
+
+<input type="text" id="login-form-login" class="jsMail" name="login-form[login]" autofocus="autofocus" tabindex="1" placeholder="Электронная почта" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <div class="form-group field-login-form-password required">
+
+<input type="password" id="login-form-password" class="jsPass" name="login-form[password]" tabindex="2" placeholder="Пароль" aria-required="true">
+
+<div class="help-block"></div>
+</div>            <button type="submit" class="jsBtnLogin jsBtn" tabindex="4">Войти</button>            <div id="w0"><ul class="auth-clients"><li><a class="vkontakte auth-link" href="/user/auth?authclient=vkontakte" title="ВКонтакте"><span class="auth-icon vkontakte"></span></a></li></ul></div>            </form>            <div class="modal-style__text">
+           
+
+  
+  </div>
+ </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+
+<!-- Modal Content Resume-->
+
+<section id="resume">
+  <div class="content content-resume">
+    <article>
+      <div class="modal-style modal-send-message jsModalMessageVacancy" style="display: block;">
+        <p class="modal-h2">Чтобы откликнуться на вакансию <br><a href="/personal-area/add-resume" class="link__">создайте резюме</a>
+        </p>
+      </div>
+    </article>
+    <a href="#" class="close">x</a>
+  </div><!-- /.content -->
+</section><!-- /section#html -->
+
+
+
+    
   </header>
   <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
   <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
@@ -399,6 +626,8 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/jQuery%20v3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/demo.js"></script>
 <script src="js/script.js"></script>
 <script src="js/sliderHomePage.js"></script>
 </body>
