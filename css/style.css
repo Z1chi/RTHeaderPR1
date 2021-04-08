@@ -18,11 +18,8 @@
 /* ============================================================
   SECTIONS
 ============================================================ */
-section {
+.section_modal {
   position: fixed;
-  top: -9999px;
-  left: -9999px;
-  visibilty: hidden;
   opacity: 0;
   background: rgba(0, 0, 0, 0.8);
   -webkit-transition: opacity 0.2s;
@@ -30,18 +27,17 @@ section {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-section.active {
+.section_modal.active {
   z-index: 100000;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  visibilty: visible;
   opacity: 0;
   opacity: 1;
 }
 
-section .content {
+.section_modal .content {
   border-radius: 10px;
   position: absolute;
   top:20px;
@@ -67,7 +63,7 @@ section .content {
   -o-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-section .content a.close {
+.section_modal .content a.close {
   position: absolute;
   top: 20px;
   right: 15px;
@@ -92,7 +88,7 @@ section .content a.close {
 
 
 
-section.active .content {
+.section_modal.active .content {
   opacity: 1;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -122,7 +118,7 @@ article p:last-child {
 
 
 
-section .content-reg{
+.section_modal .content-reg{
   border-radius: 10px;
   position: absolute;
   top: 20px;
@@ -151,7 +147,7 @@ section .content-reg{
 }
 
 
-section .content-resume{
+.section_modal .content-resume{
   border-radius: 10px;
   position: absolute;
   top: 190px;

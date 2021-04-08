@@ -134,6 +134,12 @@ $(document).ready(function () {
 	}
 	$('.select2-selection').css('border-radius', '0px');
 	$('.select2-container').children().css('border-radius', '0px')
+
+
+
+
+
+
 });
 
 

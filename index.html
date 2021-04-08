@@ -8,17 +8,35 @@
   <title>Rabota.Today</title>
   <link rel="shortcut icon" href="#"/>
   <meta charset="UTF-8">
+
+
+
+
+
   <link rel="stylesheet" href="css/header.css" type="text/css">
   <link rel="stylesheet" href="font/font.css" type="text/css">
   <link rel="stylesheet" href="css/global.css" type="text/css">
-
   <link rel="stylesheet" href="css/home-page.css" type="text/css">
+  <link rel="stylesheet" href="css/modal.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
+<!-- Modal style -->
+
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 <body>
+
+
+
+
+
 <a style="position: absolute; top:20px; left: 20px; z-index: 1;" href="./all-vacancy.html">allVcncy</a>
 <a style="position: absolute; top:40px; left: 20px; z-index: 1;" href="./single-vacancy.html">singlVcncy</a>
 <a style="position: absolute; top:60px; left: 20px; z-index: 1;" href="./index.html">home</a>
@@ -51,24 +69,28 @@
         </div>
       </div>
     </nav>
+
+
+
+
+    
+      
+
+
     <div class="jsNavMenu header-wrap__navParent">
-      <div class="jsNavMenu header-wrap__navParent">
-        <nav class="nav-pa cmn-overlays-nav">
-          <div class="clearfix">
-            <a class="link__"  href="#sign">Вход</a>
-            <a class="link__" href="#reg">Регистрация</a>
-            <a class="abstract" href="#resume">Добавить Резюме</a>
-          </div>
-        </nav>
-      </div>
+      <nav class="nav-pa cmn-overlays-nav">
+        <div class="clearfix">
+          <a class="link__"  href="#sign">Вход</a>
+          <a class="link__" href="#reg">Регистрация</a>
+          <a class="abstract" href="#resume">Добавить Резюме</a>
+        </div>
+      </nav>
     </div>
-
-
 
 
 <!-- Modal Content Sign-->
 
-<section id="sign">
+<section class="section_modal" id="sign">
   <div class="content">
     <article>
       <div class="modal-style modal-login jsModalLogin" style="display: block;">
@@ -120,7 +142,7 @@
 
 <!-- Modal Content Reg-->
 
-<section id="forgot">
+<section class="section_modal" id="forgot">
   <div class="content">
     <article>
       <div class="modal-style modal-error jsForgotPassModal" style="display: block;">
@@ -147,7 +169,7 @@
 
 <!-- Modal Content Auth-->
 
-<section id="auth">
+<section class="section_modal" id="auth">
   <div class="content">
     <article>
       <div class="modal-style modal-login jsModalLogin" style="display: block;">
@@ -184,7 +206,7 @@
 
 <!-- Modal Content Reg-->
 
-<section id="reg">
+<section class="section_modal" id="reg">
   <div class="content content-reg">
     <article>
       <div class="modal-style modal-reg jsModalReg" style="display: block;">
@@ -234,7 +256,7 @@
 
 <!-- Modal Content Empty-->
 
-<section id="empty">
+<section class="section_modal" id="empty">
   <div class="content">
     <article>
       <div class="modal-style modal-login jsModalLogin" style="display: block;">
@@ -269,7 +291,7 @@
 
 <!-- Modal Content Resume-->
 
-<section id="resume">
+<section class="section_modal" id="resume">
   <div class="content content-resume">
     <article>
       <div class="modal-style modal-send-message jsModalMessageVacancy" style="display: block;">
@@ -283,7 +305,8 @@
 
 
 
-    
+
+
   </header>
   <div class="background__pointer_right"><img src="./img/Фон_точки_.png" alt="bg"></div>
   <div class="background__pointer_left"><img src="./img/Фон_точки_.png" alt="bg"></div>
@@ -564,6 +587,14 @@
     </div>
   </section>
 </div>
+
+
+
+
+
+
+
+
 <div class="footer__usefull-links ">
 
   <ul class="footer__usefull-links__single-block"><p class="linkRabotaToday">Rabota Today</p>
@@ -623,12 +654,23 @@
     Сайт поиска работы №1<br>в ДНР и ЛНР</span>
 </div>
 
+
+    
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/jQuery%20v3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/demo.js"></script>
 <script src="js/script.js"></script>
 <script src="js/sliderHomePage.js"></script>
+
+
+<!-- Modal scripts -->
+
+<script src="js/classie.js"></script>
+<script src="js/demo.js"></script>
+
+
+
 </body>
 </html>
